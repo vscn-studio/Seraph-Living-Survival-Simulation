@@ -1,0 +1,9 @@
+{
+  "code": "lye",
+  "sealHours": 24,
+  "ingredients": [
+    { "type": "item", "code": "vsslssmod:ash", "quantity": 3 },
+    { "type": "item", "code": "game:waterportion", "litres": 5 }
+  ],
+  "output": { "type": "item", "code": "vsslssmod:lye", "litres": 5 }
+}

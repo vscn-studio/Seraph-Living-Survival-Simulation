@@ -1,0 +1,13 @@
+[
+  {
+  "ingredientPattern": "___,STS,CTC",
+  "ingredients": {
+    "S": { "type": "item", "code": "game:stick" },
+    "T": { "type": "item", "code": "game:flaxtwine" },
+    "C": { "type": "block", "code": "game:cobblestone-*", "name": "cobble" }
+  },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "block", "code": "vsslssmod:wellhead", "quantity": 1 }
+  }
+]

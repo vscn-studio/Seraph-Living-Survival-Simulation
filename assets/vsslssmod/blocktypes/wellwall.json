@@ -1,0 +1,44 @@
+{
+  "code": "wellwall",
+  "entityClass": "vsslssmodwellwall",
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "vsslssmod": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "vsslssmod:block/wellwall"
+  },
+  "drawtype": "json",
+  "renderpass": "OpaqueNoCull",
+  "blockmaterial": "Stone",
+  "textures": {
+    "granite1": {
+      "base": "game:block/stone/cobblestone/granite1"
+    },
+    "water": {
+      "base": "game:block/liquid/waterportion"
+    }
+  },
+  "resistance": 8,
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "faceCullMode": "NeverCull",
+  "rainpermeable": true,
+  "maxstacksize": 64,
+  "sounds": {
+    "place": "game:block/stone",
+    "break": "game:block/stone",
+    "hit": "game:block/stone"
+  },
+  "shapeInventory": {
+    "base": "vsslssmod:block/wellwall-inventory"
+  }
+}

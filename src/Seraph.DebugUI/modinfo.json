@@ -1,0 +1,22 @@
+{
+  "type": "code",
+  "name": "炽天使：生存模拟 - 调试工具",
+  "modid": "vsslssmoddebug",
+  "version": "1.0.0",
+  "description": "Client diagnostics and tuning window for Seraph.",
+  "authors": [
+    "HansJack",
+    "ch4Ver",
+    "buzidao9",
+    "Zhiketangjiang2"
+  ],
+  "side": "Client",
+  "requiredOnClient": false,
+  "requiredOnServer": false,
+  "dependencies": {
+    "game": "1.22.0",
+    "vsslssmod": "1.0.0",
+    "vsimgui": "1.2.7"
+  }
+}
+

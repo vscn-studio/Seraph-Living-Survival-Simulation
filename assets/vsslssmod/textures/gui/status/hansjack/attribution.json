@@ -1,0 +1,75 @@
+{
+  "author": "HansJack",
+  "copyright": "© HansJack",
+  "license": "CC0",
+  "files": [
+    {
+      "file": "ketosis.png",
+      "label": "酮症",
+      "note": "Authorized artwork preserved unchanged.",
+      "copyright": "© HansJack",
+      "source": "icons/status/HansJack/ketosis.png",
+      "license": "CC0",
+      "sha256": "ce8e1c1a09abf8fde089d47517c8413ec1655f17367a09d128c0d727ca661c29",
+      "width": 48,
+      "height": 48,
+      "modified": false,
+      "author": "HansJack",
+      "sourceSha256": "ce8e1c1a09abf8fde089d47517c8413ec1655f17367a09d128c0d727ca661c29"
+    },
+    {
+      "file": "bone-weakness.png",
+      "label": "bone-weakness",
+      "source": "icons/status/HansJack/bone-weakness.png",
+      "sha256": "2638931b769f15477e5c635b95b307b669157c4b377498dcbf4a6fd09347f4bc",
+      "copyright": "© HansJack",
+      "license": "CC0",
+      "modified": false,
+      "note": "Authorized artwork preserved unchanged.",
+      "width": 48,
+      "height": 48,
+      "author": "HansJack",
+      "sourceSha256": "2638931b769f15477e5c635b95b307b669157c4b377498dcbf4a6fd09347f4bc"
+    },
+    {
+      "file": "anemia.png",
+      "label": "anemia",
+      "source": "icons/status/HansJack/anemia.png",
+      "sha256": "7c79d68fc44edf2c7ac23ce892af62439f4a24fbe35c7c25807e3f103465ab22",
+      "copyright": "© HansJack",
+      "license": "CC0",
+      "modified": false,
+      "note": "Authorized artwork preserved unchanged.",
+      "width": 48,
+      "height": 48,
+      "author": "HansJack",
+      "sourceSha256": "7c79d68fc44edf2c7ac23ce892af62439f4a24fbe35c7c25807e3f103465ab22"
+    },
+    {
+      "file": "dark-adaptation-close.png",
+      "author": "HansJack",
+      "copyright": "© HansJack",
+      "source": "icons/status/HansJack/dark-adaptation-close.png",
+      "license": "CC0",
+      "sha256": "4d1824b5c60397d509c98c1a29f5abfb7ca7df7e8e5e32fb166b00a0551af1df",
+      "sourceSha256": "d9a6899fe6432e8825878b09ffa5bef1c0a2db60c742b48e99886cca324f7a63",
+      "width": 128,
+      "height": 128,
+      "modified": true,
+      "note": "Project HUD derivative."
+    },
+    {
+      "file": "dark-adaptation-open.png",
+      "author": "HansJack",
+      "copyright": "© HansJack",
+      "source": "icons/status/HansJack/dark-adaptation-open.png",
+      "license": "CC0",
+      "sha256": "d52bfe3222d67cae464cca28138d2ab0acdbd5aadee0a16b641d3d02c306e3d5",
+      "sourceSha256": "5498f9a927032ecfbf534b033ac5e58e3659a0c7e6785c347d590e13607d1c83",
+      "width": 128,
+      "height": 128,
+      "modified": false,
+      "note": "Source artwork preserved; PNG re-encoded."
+    }
+  ]
+}

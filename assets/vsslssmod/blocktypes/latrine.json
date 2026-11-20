@@ -1,0 +1,43 @@
+{
+  "code": "latrine",
+  "class": "vsslssmodlatrine",
+  "entityClass": "vsslssmodlatrine",
+  "placedPriorityInteract": true,
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "vsslssmod": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "vsslssmod:block/latrine"
+  },
+  "drawtype": "json",
+  "collisionbox": null,
+  "selectionbox": null,
+  "blockmaterial": "Wood",
+  "textures": {
+    "wood": {
+      "base": "game:block/wood/planks/walnut1"
+    },
+    "soil": {
+      "base": "game:block/soil/fertcompost"
+    }
+  },
+  "resistance": 2,
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "rainpermeable": true,
+  "maxstacksize": 16,
+  "sounds": {
+    "place": "game:block/wood",
+    "break": "game:block/wood",
+    "hit": "game:block/wood"
+  }
+}

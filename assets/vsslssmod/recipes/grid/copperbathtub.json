@@ -1,0 +1,12 @@
+[
+  {
+    "ingredientPattern": "___,PCP,PPP",
+    "ingredients": {
+      "P": { "type": "item", "code": "game:metalplate-copper", "quantity": 1 },
+      "C": { "type": "item", "code": "game:metalnailsandstrips-copper", "quantity": 2 }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "vsslssmod:copperbathtub", "quantity": 1 }
+  }
+]

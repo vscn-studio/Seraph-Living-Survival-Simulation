@@ -1,0 +1,6 @@
+[
+  { "file": "game:blocktypes/metal/verticalboiler.json", "op": "addmerge", "path": "/entityBehaviors", "value": [{ "name": "vsslssmodsaltresidue" }] },
+  { "file": "game:itemtypes/liquid/waterportion.json", "op": "add", "path": "/attributes/distillationProps", "value": { "distilledStack": { "type": "item", "code": "game:waterportion" }, "ratio": 1 } },
+  { "file": "game:itemtypes/liquid/saltwaterportion.json", "op": "add", "path": "/attributes/distillationProps", "value": { "distilledStack": { "type": "item", "code": "game:waterportion" }, "ratio": 1 } },
+  { "file": "game:itemtypes/liquid/boilingwaterportion.json", "op": "add", "path": "/attributes/distillationProps", "value": { "distilledStack": { "type": "item", "code": "game:waterportion" }, "ratio": 1 } }
+]

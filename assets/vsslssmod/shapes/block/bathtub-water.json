@@ -1,0 +1,21 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": { "water": "game:block/liquid/waterportion" },
+  "elements": [
+    {
+      "name": "water-surface",
+      "from": [0, -1, 0],
+      "to": [16, 0, 16],
+      "renderPass": 4,
+      "faces": {
+        "north": { "enabled": false },
+        "east": { "enabled": false },
+        "south": { "enabled": false },
+        "west": { "enabled": false },
+        "up": { "texture": "#water", "uv": [0, 0, 16, 16] },
+        "down": { "enabled": false }
+      }
+    }
+  ]
+}

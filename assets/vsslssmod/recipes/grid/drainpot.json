@@ -1,0 +1,29 @@
+[
+  {
+    "ingredientPattern": "KLA",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+      "K": {
+        "type": "item",
+        "code": "game:knife-*",
+        "isTool": true
+      },
+      "L": {
+        "type": "block",
+        "code": "game:log-*",
+        "quantity": 2
+      },
+      "A": {
+        "type": "item",
+        "code": "game:axe-*",
+        "isTool": true
+      }
+    },
+    "output": {
+      "type": "block",
+      "code": "vsslssmod:drainpot",
+      "quantity": 1
+    }
+  }
+]

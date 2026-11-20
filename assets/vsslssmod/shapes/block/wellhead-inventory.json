@@ -1,0 +1,1643 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "granite1": "game:block/stone/cobblestone/granite1",
+    "woodud": "game:block/wood/planks/oak1",
+    "string": "game:block/cloth/burlap/string"
+  },
+  "elements": [
+    {
+      "name": "voxel_0",
+      "from": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "to": [
+        15.0,
+        5.666666666666666,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            7.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            7.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            7.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            7.0,
+            2.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            14.0,
+            16.0,
+            16.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_1",
+      "from": [
+        1.0,
+        1.0,
+        2.75
+      ],
+      "to": [
+        2.75,
+        9.296296296296296,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            14.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            2.0,
+            2.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            14.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_2",
+      "from": [
+        1.0,
+        5.666666666666666,
+        1.0
+      ],
+      "to": [
+        8.875,
+        9.296296296296296,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            7.0,
+            0.0,
+            16.0,
+            7.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            7.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            9.0,
+            7.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            7.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            9.0,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            14.0,
+            9.0,
+            16.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_3",
+      "from": [
+        2.75,
+        1.0,
+        13.25
+      ],
+      "to": [
+        15.0,
+        9.296296296296296,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            14.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            14.0,
+            16.0,
+            16.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            0.0,
+            16.0,
+            2.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_4",
+      "from": [
+        8.875,
+        5.666666666666666,
+        1.0
+      ],
+      "to": [
+        15.0,
+        9.296296296296296,
+        1.875
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            7.0,
+            7.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            15.0,
+            0.0,
+            16.0,
+            7.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            0.0,
+            16.0,
+            7.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            1.0,
+            7.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            0.0,
+            16.0,
+            1.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            15.0,
+            16.0,
+            16.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_5",
+      "from": [
+        8.875,
+        6.185185185185185,
+        1.875
+      ],
+      "to": [
+        15.0,
+        9.296296296296296,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            7.0,
+            6.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            0.0,
+            15.0,
+            6.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            0.0,
+            16.0,
+            6.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            1.0,
+            0.0,
+            2.0,
+            6.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            1.0,
+            16.0,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            9.0,
+            14.0,
+            16.0,
+            15.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_6",
+      "from": [
+        9.75,
+        5.666666666666666,
+        1.875
+      ],
+      "to": [
+        15.0,
+        6.185185185185185,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            6.0,
+            6.0,
+            7.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            6.0,
+            15.0,
+            7.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10.0,
+            6.0,
+            16.0,
+            7.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            1.0,
+            6.0,
+            2.0,
+            7.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            10.0,
+            1.0,
+            16.0,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10.0,
+            14.0,
+            16.0,
+            15.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_7",
+      "from": [
+        13.25,
+        1.0,
+        2.75
+      ],
+      "to": [
+        15.0,
+        9.296296296296296,
+        13.25
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0.0,
+            0.0,
+            2.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            0.0,
+            14.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            2.0,
+            0.0,
+            14.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            2.0,
+            16.0,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            14.0,
+            2.0,
+            16.0,
+            14.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_8",
+      "from": [
+        6.25,
+        9.296296296296296,
+        1.0
+      ],
+      "to": [
+        7.125,
+        15.0,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            0.0,
+            16.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            14.0,
+            16.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            9.0,
+            2.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_9",
+      "from": [
+        6.25,
+        9.296296296296296,
+        13.25
+      ],
+      "to": [
+        7.125,
+        15.0,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            14.0,
+            16.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            0.0,
+            16.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            9.0,
+            2.0,
+            10.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_10",
+      "from": [
+        7.125,
+        10.333333333333332,
+        1.0
+      ],
+      "to": [
+        9.75,
+        13.444444444444443,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            7.0,
+            14.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            0.0,
+            14.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            6.0,
+            14.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            14.0,
+            14.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            2.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_11",
+      "from": [
+        7.125,
+        10.333333333333332,
+        13.25
+      ],
+      "to": [
+        9.75,
+        13.444444444444443,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            7.0,
+            14.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            14.0,
+            14.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            6.0,
+            14.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            8.0,
+            0.0,
+            14.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            2.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_12",
+      "from": [
+        7.125,
+        13.444444444444443,
+        1.0
+      ],
+      "to": [
+        9.75,
+        15.0,
+        1.875
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            7.0,
+            8.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            0.0,
+            8.0,
+            1.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            8.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            15.0,
+            8.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            1.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            15.0,
+            6.0,
+            16.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_13",
+      "from": [
+        7.125,
+        13.444444444444443,
+        14.125
+      ],
+      "to": [
+        9.75,
+        15.0,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            7.0,
+            8.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            15.0,
+            8.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            8.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            0.0,
+            8.0,
+            1.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            15.0,
+            6.0,
+            16.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            1.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_14",
+      "from": [
+        7.125,
+        13.962962962962962,
+        1.875
+      ],
+      "to": [
+        9.75,
+        15.0,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            7.0,
+            7.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            1.0,
+            7.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            7.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            14.0,
+            7.0,
+            15.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            1.0,
+            6.0,
+            2.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            15.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_15",
+      "from": [
+        7.125,
+        13.962962962962962,
+        2.75
+      ],
+      "to": [
+        8.875,
+        14.481481481481481,
+        14.125
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            7.0,
+            7.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            2.0,
+            7.0,
+            15.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            7.0,
+            7.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            1.0,
+            7.0,
+            14.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            2.0,
+            7.0,
+            15.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            1.0,
+            7.0,
+            14.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_16",
+      "from": [
+        7.125,
+        14.481481481481481,
+        13.25
+      ],
+      "to": [
+        9.75,
+        15.0,
+        14.125
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            7.0,
+            6.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            14.0,
+            6.0,
+            15.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            6.0,
+            6.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            5.0,
+            1.0,
+            6.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            15.0,
+            9.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            1.0,
+            6.0,
+            2.0,
+            9.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_17",
+      "from": [
+        8.875,
+        9.296296296296296,
+        1.0
+      ],
+      "to": [
+        9.75,
+        10.333333333333332,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            14.0,
+            16.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            2.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_18",
+      "from": [
+        8.875,
+        9.296296296296296,
+        13.25
+      ],
+      "to": [
+        9.75,
+        10.333333333333332,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            9.0,
+            16.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            14.0,
+            16.0,
+            16.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            0.0,
+            16.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            16.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            0.0,
+            6.0,
+            2.0,
+            7.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_19",
+      "from": [
+        8.875,
+        13.444444444444443,
+        1.875
+      ],
+      "to": [
+        9.75,
+        13.962962962962962,
+        2.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            7.0,
+            9.0,
+            8.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            7.0,
+            1.0,
+            8.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            7.0,
+            6.0,
+            8.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            7.0,
+            14.0,
+            8.0,
+            15.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            1.0,
+            6.0,
+            2.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            15.0,
+            7.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    },
+    {
+      "name": "voxel_20",
+      "from": [
+        8.875,
+        13.444444444444443,
+        13.25
+      ],
+      "to": [
+        9.75,
+        14.481481481481481,
+        14.125
+      ],
+      "faces": {
+        "north": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            9.0,
+            8.0,
+            10.0
+          ],
+          "rotation": 90
+        },
+        "east": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            14.0,
+            8.0,
+            15.0
+          ],
+          "rotation": 90
+        },
+        "south": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            6.0,
+            8.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "west": {
+          "texture": "#woodud",
+          "uv": [
+            6.0,
+            1.0,
+            8.0,
+            2.0
+          ],
+          "rotation": 90
+        },
+        "up": {
+          "texture": "#woodud",
+          "uv": [
+            14.0,
+            6.0,
+            15.0,
+            7.0
+          ],
+          "rotation": 90
+        },
+        "down": {
+          "texture": "#woodud",
+          "uv": [
+            1.0,
+            6.0,
+            2.0,
+            7.0
+          ],
+          "rotation": 90
+        }
+      },
+      "rotationOrigin": [
+        1.0,
+        9.296296296296296,
+        1.0
+      ]
+    }
+  ]
+}

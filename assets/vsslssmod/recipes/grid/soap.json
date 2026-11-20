@@ -1,0 +1,12 @@
+[
+  {
+    "ingredientPattern": "SK",
+    "ingredients": {
+      "S": { "type": "item", "code": "vsslssmod:soap", "quantity": 1 },
+      "K": { "type": "item", "code": "game:knife-*", "isTool": true }
+    },
+    "width": 2,
+    "height": 1,
+    "output": { "type": "item", "code": "vsslssmod:soap-powder", "quantity": 2 }
+  }
+]

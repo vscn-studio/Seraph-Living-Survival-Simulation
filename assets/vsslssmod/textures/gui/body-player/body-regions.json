@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "canvas": {
+    "width": 256,
+    "height": 640
+  },
+  "source": "provenance.json",
+  "orientation": "anatomical: front screen left = right",
+  "scope": "UI partitions of native model projection, not implemented simulation anatomy",
+  "views": {
+    "front": [
+      {
+        "id": "head-neck",
+        "labelZh": "头颈",
+        "labelEn": "Head and neck",
+        "anchor": [
+          128,
+          87
+        ],
+        "hitColor": "#202040",
+        "mask": "masks/front/head-neck.png"
+      },
+      {
+        "id": "torso",
+        "labelZh": "躯干",
+        "labelEn": "Torso",
+        "anchor": [
+          127,
+          237
+        ],
+        "hitColor": "#602040",
+        "mask": "masks/front/torso.png"
+      },
+      {
+        "id": "right-arm",
+        "labelZh": "右臂",
+        "labelEn": "Right arm",
+        "anchor": [
+          45,
+          289
+        ],
+        "hitColor": "#a02040",
+        "mask": "masks/front/right-arm.png"
+      },
+      {
+        "id": "left-arm",
+        "labelZh": "左臂",
+        "labelEn": "Left arm",
+        "anchor": [
+          210,
+          288
+        ],
+        "hitColor": "#e02040",
+        "mask": "masks/front/left-arm.png"
+      },
+      {
+        "id": "right-leg",
+        "labelZh": "右腿",
+        "labelEn": "Right leg",
+        "anchor": [
+          89,
+          464
+        ],
+        "hitColor": "#206040",
+        "mask": "masks/front/right-leg.png"
+      },
+      {
+        "id": "left-leg",
+        "labelZh": "左腿",
+        "labelEn": "Left leg",
+        "anchor": [
+          166,
+          464
+        ],
+        "hitColor": "#606040",
+        "mask": "masks/front/left-leg.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+Project-generated 2D Vintage Story Seraph inspection projections.
+Original model and skin: Anego Studios. Game version 1.22.7.
+Only generated 2D images and picking masks are retained; no player 3D shapes or original skin atlas are included.
+Underlying game asset rights remain with their owners and are not relicensed as project MIT.
+See provenance.json for source hashes, rendering pose and derivation details.
+此目录保留项目生成的 2D 投影图及分区蒙版，不包含玩家 3D 模型或原始皮肤图集；原模型与贴图权利归 Anego Studios，不改标为 MIT。

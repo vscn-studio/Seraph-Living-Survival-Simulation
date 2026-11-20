@@ -1,0 +1,65 @@
+{
+  "code": "compostdung-3",
+  "shape": {
+    "base": "game:item/rot",
+    "scale": 2.1,
+    "offsetX": 0.065625,
+    "offsetY": 0.004,
+    "offsetZ": 0.065625,
+    "selectiveElements": [
+      "Origin/Cube1",
+      "Origin/Cube3",
+      "Origin/Cube4",
+      "Origin/Cube5",
+      "Origin/shroomie 1/*",
+      "Origin/Cube10",
+      "Origin/Cube11",
+      "Origin/Cube12",
+      "Origin/Cube13",
+      "Origin/Cube14",
+      "Origin/Cube15",
+      "Origin/Cube16"
+    ]
+  },
+  "drawtype": "json",
+  "blockmaterial": "Soil",
+  "textures": {
+    "rot": {
+      "base": "game:block/soil/fertcompost"
+    },
+    "base": {
+      "base": "game:block/soil/fertcompost"
+    }
+  },
+  "lightabsorption": 0,
+  "emitsideao": {
+    "all": false
+  },
+  "resistance": 0.5,
+  "sideopaque": {
+    "all": false
+  },
+  "sideao": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.09825,
+    "y1": 0,
+    "z1": 0.09825,
+    "x2": 0.90175,
+    "y2": 0.40575,
+    "z2": 0.90175
+  },
+  "selectionbox": {
+    "x1": 0.09825,
+    "y1": 0,
+    "z1": 0.09825,
+    "x2": 0.90175,
+    "y2": 0.40575,
+    "z2": 0.90175
+  },
+  "maxstacksize": 64
+}

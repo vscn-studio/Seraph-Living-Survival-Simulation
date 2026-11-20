@@ -1,0 +1,11 @@
+[
+  {
+    "ingredientPattern": "BB",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:plank-*", "name": "wood" }
+    },
+    "width": 2,
+    "height": 1,
+    "output": { "type": "block", "code": "vsslssmod:latrine", "quantity": 1 }
+  }
+]

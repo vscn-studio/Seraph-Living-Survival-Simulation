@@ -1,0 +1,1859 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "granite1": "game:block/stone/cobblestone/granite1"
+  },
+  "elements": [
+    {
+      "name": "voxel_0",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        2,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            16,
+            16,
+            0,
+            0
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_1",
+      "from": [
+        4,
+        2,
+        4
+      ],
+      "to": [
+        12,
+        4,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            12,
+            12,
+            14
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            12,
+            12,
+            14
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            12,
+            12,
+            14
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            12,
+            12,
+            14
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            12,
+            4,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            4,
+            12,
+            12
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_2",
+      "from": [
+        4,
+        4,
+        4
+      ],
+      "to": [
+        6,
+        16,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            12,
+            10,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            4,
+            12,
+            6
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_3",
+      "from": [
+        4,
+        4,
+        7
+      ],
+      "to": [
+        6,
+        16,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            9,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            9,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            9,
+            10,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            7,
+            12,
+            9
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_4",
+      "from": [
+        4,
+        4,
+        10
+      ],
+      "to": [
+        6,
+        16,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            6,
+            10,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            10,
+            12,
+            12
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_5",
+      "from": [
+        4,
+        14,
+        6
+      ],
+      "to": [
+        6,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            10,
+            10,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            6,
+            12,
+            7
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_6",
+      "from": [
+        4,
+        14,
+        9
+      ],
+      "to": [
+        6,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            12,
+            7,
+            10,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            9,
+            12,
+            10
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_7",
+      "from": [
+        6,
+        14,
+        4
+      ],
+      "to": [
+        12,
+        16,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            10,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            12,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            12,
+            4,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            4,
+            10,
+            6
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_8",
+      "from": [
+        6,
+        14,
+        10
+      ],
+      "to": [
+        12,
+        16,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            10,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            12,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            6,
+            4,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            10,
+            10,
+            12
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_9",
+      "from": [
+        6,
+        15,
+        7
+      ],
+      "to": [
+        7,
+        16,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            9,
+            9,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            7,
+            10,
+            8
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_10",
+      "from": [
+        6,
+        15,
+        9
+      ],
+      "to": [
+        7,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            7,
+            9,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            9,
+            10,
+            10
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_11",
+      "from": [
+        7,
+        4,
+        4
+      ],
+      "to": [
+        9,
+        14,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            2,
+            9,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            2,
+            9,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            12,
+            7,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            4,
+            9,
+            6
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_12",
+      "from": [
+        7,
+        4,
+        10
+      ],
+      "to": [
+        9,
+        14,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            2,
+            9,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            2,
+            9,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            6,
+            7,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            10,
+            9,
+            12
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_13",
+      "from": [
+        7,
+        15,
+        6
+      ],
+      "to": [
+        8,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            10,
+            8,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            6,
+            9,
+            7
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_14",
+      "from": [
+        7,
+        15,
+        8
+      ],
+      "to": [
+        8,
+        16,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            8,
+            8,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            8,
+            9,
+            9
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_15",
+      "from": [
+        8,
+        15,
+        7
+      ],
+      "to": [
+        9,
+        16,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            9,
+            7,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            7,
+            8,
+            8
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_16",
+      "from": [
+        8,
+        15,
+        9
+      ],
+      "to": [
+        9,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            7,
+            7,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            9,
+            8,
+            10
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_17",
+      "from": [
+        9,
+        15,
+        6
+      ],
+      "to": [
+        12,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            12,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            10,
+            4,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            6,
+            7,
+            7
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_18",
+      "from": [
+        9,
+        15,
+        8
+      ],
+      "to": [
+        12,
+        16,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            7,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            12,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            8,
+            4,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            8,
+            7,
+            9
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_19",
+      "from": [
+        10,
+        4,
+        4
+      ],
+      "to": [
+        12,
+        14,
+        6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            12,
+            4,
+            10
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            4,
+            6,
+            6
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_20",
+      "from": [
+        10,
+        4,
+        7
+      ],
+      "to": [
+        12,
+        15,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            1,
+            6,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            1,
+            9,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            1,
+            12,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            1,
+            9,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            9,
+            4,
+            7
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            7,
+            6,
+            9
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_21",
+      "from": [
+        10,
+        4,
+        10
+      ],
+      "to": [
+        12,
+        14,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            2,
+            6,
+            12
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            2,
+            12,
+            12
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            6,
+            4,
+            4
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            10,
+            6,
+            12
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_22",
+      "from": [
+        10,
+        14,
+        6
+      ],
+      "to": [
+        12,
+        15,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            1,
+            6,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            1,
+            10,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            1,
+            12,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            1,
+            7,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            10,
+            4,
+            9
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            6,
+            6,
+            7
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_23",
+      "from": [
+        10,
+        14,
+        9
+      ],
+      "to": [
+        12,
+        16,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            2
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            0,
+            7,
+            2
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            2
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            9,
+            0,
+            10,
+            2
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            7,
+            4,
+            6
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            9,
+            6,
+            10
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "voxel_24",
+      "from": [
+        10,
+        15,
+        7
+      ],
+      "to": [
+        12,
+        16,
+        8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            0,
+            6,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#granite1",
+          "uv": [
+            8,
+            0,
+            9,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#granite1",
+          "uv": [
+            10,
+            0,
+            12,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#granite1",
+          "uv": [
+            7,
+            0,
+            8,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#granite1",
+          "uv": [
+            6,
+            9,
+            4,
+            8
+          ]
+        },
+        "down": {
+          "texture": "#granite1",
+          "uv": [
+            4,
+            7,
+            6,
+            8
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

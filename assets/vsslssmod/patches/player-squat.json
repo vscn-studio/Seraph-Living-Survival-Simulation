@@ -1,0 +1,51 @@
+[
+  {
+    "op": "add",
+    "file": "game:shapes/entity/humanoid/seraph-faceless.json",
+    "path": "/animations/-",
+    "value": {
+      "name": "Seraph defecation squat",
+      "code": "vsslssmod-squat",
+      "quantityframes": 30,
+      "onActivityStopped": "Rewind",
+      "onAnimationEnd": "Repeat",
+      "keyframes": [
+        {
+          "frame": 0,
+          "elements": {
+            "LowerTorso": { "offsetX": 2, "offsetY": -9, "offsetZ": 0, "rotationX": 0, "rotationY": 0, "rotationZ": 15 },
+            "UpperTorso": { "rotationX": 0, "rotationY": 0, "rotationZ": 5 },
+            "UpperFootL": { "offsetX": 0, "offsetY": 0, "offsetZ": 0.6, "rotationX": -8, "rotationY": 0, "rotationZ": -112 },
+            "LowerFootL": { "rotationX": 0, "rotationY": 0, "rotationZ": 140 },
+            "UpperFootR": { "offsetX": 0, "offsetY": 0, "offsetZ": -0.6, "rotationX": 8, "rotationY": 0, "rotationZ": -112 },
+            "LowerFootR": { "rotationX": 0, "rotationY": 0, "rotationZ": 140 },
+            "UpperArmL": { "rotationX": 0, "rotationY": 0, "rotationZ": -20 },
+            "LowerArmL": { "rotationX": 0, "rotationY": 0, "rotationZ": -65 },
+            "UpperArmR": { "rotationX": 0, "rotationY": 0, "rotationZ": -20 },
+            "LowerArmR": { "rotationX": 0, "rotationY": 0, "rotationZ": -65 },
+            "Head": { "rotationX": 0, "rotationY": 0, "rotationZ": -10 }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:entities/humanoid/player.json",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "vsslssmod-squat",
+      "animation": "vsslssmod-squat",
+      "weight": 100,
+      "blendMode": "Average",
+      "supressDefaultAnimation": true,
+      "easeInSpeed": 8,
+      "easeOutSpeed": 8,
+      "elementWeight": {
+        "LowerTorso": 100, "UpperTorso": 100,
+        "UpperFootL": 100, "LowerFootL": 100,
+        "UpperFootR": 100, "LowerFootR": 100
+      }
+    }
+  }
+]

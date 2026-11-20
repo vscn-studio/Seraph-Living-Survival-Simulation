@@ -1,0 +1,160 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "drainpottexture_0": "game:block/wood/treetrunk/debarked/birch",
+    "drainpottexture_1": "game:block/wood/debarked/birch",
+    "drainpottexture_2": "game:block/wood/debarked/oak",
+    "drainpottexture_3": "game:block/wood/treetrunk/debarked/oak"
+  },
+  "elements": [
+    {
+      "name": "voxel_0",
+      "from": [
+        7.0,
+        0.8888888888888888,
+        7.0
+      ],
+      "to": [
+        9.0,
+        3.5555555555555554,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            9.0,
+            7.0,
+            7.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            7.0,
+            9.0,
+            9.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "voxel_1",
+      "from": [
+        7.0,
+        1.7777777777777777,
+        9.0
+      ],
+      "to": [
+        9.0,
+        3.5555555555555554,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            0.0,
+            12.0,
+            7.0,
+            14.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            12.0,
+            16.0,
+            14.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            7.0,
+            7.0,
+            0.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            9.0,
+            9.0,
+            16.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

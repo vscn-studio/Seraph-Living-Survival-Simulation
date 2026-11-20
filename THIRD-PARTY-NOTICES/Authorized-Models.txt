@@ -1,0 +1,21 @@
+Models authorized for Seraph A Living Survival Simulation
+
+Bathtub / 浴桶模型: copyright Zhiketangjiang2. All rights reserved.
+Runtime geometry: assets/vsslssmod/shapes/block/bathtub.json,
+bathtub-part.json, bathtub-inventory.json.
+
+Sediment diversion pot / 沉积导流盆 and water purification filter pot /
+净水过滤盆: copyright buzidao9. All rights reserved.
+Runtime geometry: assets/vsslssmod/shapes/block/drainpot.json,
+drainpot-pipe.json, drainpot-inventory.json, filterpot.json,
+filterpot-inventory.json. The watertreatment block also uses filterpot.
+
+The respective authors authorize use of these models in this mod, as
+confirmed by the project maintainer on 2026-11-08. Copyright remains with
+the authors. The project's MIT license does not relicense these models
+or grant permission to reuse them in other projects. Contact the authors
+for uses outside this mod. Native game textures referenced by asset code
+remain the property of their respective rights holders.
+
+以上模型版权归各自作者所有，作者授权本模组使用；不改标为 MIT，
+不授予其他项目使用权。此说明记录维护者确认的授权，不替代作者原始授权凭证。

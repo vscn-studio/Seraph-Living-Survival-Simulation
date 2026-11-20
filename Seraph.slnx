@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Seraph.Core/Seraph.Core.csproj" />
+    <Project Path="src/Seraph.Application/Seraph.Application.csproj" />
+    <Project Path="src/Seraph/Seraph.csproj" />
+    <Project Path="src/Seraph.DebugUI/Seraph.DebugUI.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Seraph.Core.Tests/Seraph.Core.Tests.csproj" />
+    <Project Path="tests/Seraph.Application.Tests/Seraph.Application.Tests.csproj" />
+    <Project Path="tests/Seraph.GameBridge.Tests/Seraph.GameBridge.Tests.csproj" />
+  </Folder>
+</Solution>

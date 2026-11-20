@@ -1,0 +1,15 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": { "soap": "game:block/soil/fertcompost" },
+  "elements": [
+    { "name": "rectangular-soap-bar", "from": [2, 1, 3], "to": [14, 6, 13], "faces": {
+      "north": { "texture": "#soap", "uv": [2, 10, 14, 15] },
+      "east": { "texture": "#soap", "uv": [3, 10, 13, 15] },
+      "south": { "texture": "#soap", "uv": [2, 10, 14, 15] },
+      "west": { "texture": "#soap", "uv": [3, 10, 13, 15] },
+      "up": { "texture": "#soap", "uv": [2, 3, 14, 13] },
+      "down": { "texture": "#soap", "uv": [2, 3, 14, 13] }
+    }}
+  ]
+}

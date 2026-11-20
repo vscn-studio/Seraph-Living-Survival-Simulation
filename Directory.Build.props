@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <Version>1.0.0</Version>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Authors>HansJack;ch4Ver;buzidao9;Zhiketangjiang2</Authors>
+    <Product>vsslssmod</Product>
+    <Copyright>Copyright (c) 2026 HansJack</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NuGetAudit>false</NuGetAudit>
+    <VsGamePath Condition="'$(VsGamePath)' == ''">$(MSBuildThisFileDirectory)../vs_client_linux-x64_1.22.7/vintagestory</VsGamePath>
+    <VsImGuiPath Condition="'$(VsImGuiPath)' == ''">$(MSBuildThisFileDirectory)../vsimgui_1.2.7</VsImGuiPath>
+  </PropertyGroup>
+</Project>
+

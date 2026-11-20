@@ -1,0 +1,24 @@
+[
+  {
+    "ingredientPattern": "SLS,LCL,SLS",
+    "ingredients": {
+      "S": { "type": "block", "code": "game:rock-*", "name": "rock" },
+      "L": { "type": "item", "code": "game:stone-*", "name": "loosestone" },
+      "C": { "type": "item", "code": "game:clay-*", "name": "clay" }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "vsslssmod:chimney", "quantity": 1 }
+  },
+  {
+    "ingredientPattern": "SLS,LCL,SLS",
+    "ingredients": {
+      "S": { "type": "block", "code": "game:cobblestone-*", "name": "cobble" },
+      "L": { "type": "item", "code": "game:stone-*", "name": "loosestone" },
+      "C": { "type": "item", "code": "game:clay-*", "name": "clay" }
+    },
+    "width": 3,
+    "height": 3,
+    "output": { "type": "block", "code": "vsslssmod:chimney", "quantity": 1 }
+  }
+]

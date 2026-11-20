@@ -1,0 +1,146 @@
+[
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/4/cooksInto/quantity",
+    "value": 20,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/5/cooksInto/quantity",
+    "value": 40,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/6/cooksInto/quantity",
+    "value": 60,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/7/cooksInto/quantity",
+    "value": 80,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/8/cooksInto/quantity",
+    "value": 8,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/9/cooksInto/quantity",
+    "value": 16,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/10/cooksInto/quantity",
+    "value": 24,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/11/cooksInto/quantity",
+    "value": 32,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/12/cooksInto/quantity",
+    "value": 8,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/13/cooksInto/quantity",
+    "value": 16,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/14/cooksInto/quantity",
+    "value": 24,
+    "side": "Server"
+  },
+  {
+    "dependsOn": [
+      {
+        "modid": "pemmican"
+      }
+    ],
+    "file": "pemmican:recipes/cooking/syrup.json",
+    "op": "replace",
+    "path": "/15/cooksInto/quantity",
+    "value": 32,
+    "side": "Server"
+  }
+]

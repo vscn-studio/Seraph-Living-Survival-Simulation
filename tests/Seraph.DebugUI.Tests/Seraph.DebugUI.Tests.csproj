@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UiGamePath>$(VsGamePath)</UiGamePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Seraph.DebugUI/Seraph.DebugUI.csproj" />
+    <Reference Include="VintagestoryAPI" HintPath="$(UiGamePath)/VintagestoryAPI.dll" />
+    <Reference Include="VintagestoryLib" HintPath="$(UiGamePath)/VintagestoryLib.dll" />
+    <Reference Include="VSImGui" HintPath="$(VsImGuiPath)/VSImGui.dll" />
+    <Reference Include="ImGui.NET" HintPath="$(VsImGuiPath)/ImGui.NET.dll" />
+    <Reference Include="ImGuiController_OpenTK" HintPath="$(VsImGuiPath)/ImGuiController_OpenTK.dll" />
+    <Reference Include="OpenTK.Graphics" HintPath="$(UiGamePath)/Lib/OpenTK.Graphics.dll" />
+    <Reference Include="OpenTK.Core" HintPath="$(UiGamePath)/Lib/OpenTK.Core.dll" />
+    <Reference Include="OpenTK.Mathematics" HintPath="$(UiGamePath)/Lib/OpenTK.Mathematics.dll" />
+    <Reference Include="OpenTK.Windowing.Common" HintPath="$(UiGamePath)/Lib/OpenTK.Windowing.Common.dll" />
+    <Reference Include="OpenTK.Windowing.Desktop" HintPath="$(UiGamePath)/Lib/OpenTK.Windowing.Desktop.dll" />
+    <Reference Include="OpenTK.Windowing.GraphicsLibraryFramework" HintPath="$(UiGamePath)/Lib/OpenTK.Windowing.GraphicsLibraryFramework.dll" />
+    <Reference Include="SkiaSharp" HintPath="$(UiGamePath)/Lib/SkiaSharp.dll" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(UiGamePath)/Lib/Newtonsoft.Json.dll" />
+    <None Include="$(UiGamePath)/Lib/glfw3.dll;$(UiGamePath)/Lib/libSkiaSharp.dll" CopyToOutputDirectory="PreserveNewest" Link="%(Filename)%(Extension)" />
+  </ItemGroup>
+  <Target Name="ValidateNativeUiReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(UiGamePath)/Lib/glfw3.dll')" Text="Native UI checks require a Windows game reference set. Pass -p:VsGamePath=path/to/Windows/Vintagestory, or run scripts/Test-DebugUI.ps1." />
+  </Target>
+</Project>

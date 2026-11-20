@@ -1,0 +1,52 @@
+{
+  "code": "bathtub-part",
+  "class": "vsslssmodbathtub",
+  "entityClass": "vsslssmodbathtub",
+  "placedPriorityInteract": true,
+  "shape": {
+    "base": "vsslssmod:block/bathtub-part"
+  },
+  "drawtype": "json",
+  "collisionbox": null,
+  "selectionbox": null,
+  "blockmaterial": "Wood",
+  "textures": {
+    "aged": {
+      "base": "game:block/wood/planks/aged/aged1",
+      "rotation": 90
+    },
+    "acacia": {
+      "base": "game:block/wood/planks/aged/acacia1",
+      "rotation": 90
+    },
+    "metal": {
+      "base": "game:block/metal/sheet-plain/blackbronze1"
+    },
+    "daub": {
+      "base": "game:block/clay/daub/ash/normal1"
+    },
+    "stone": {
+      "base": "game:block/stone/cobblestone/obsidian1"
+    },
+    "soil": {
+      "base": "game:block/soil/ferthigh"
+    },
+    "water": {
+      "base": "game:block/liquid/waterportion"
+    }
+  },
+  "resistance": 2,
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "rainpermeable": true,
+  "maxstacksize": 1,
+  "sounds": {
+    "place": "game:block/wood",
+    "break": "game:block/wood",
+    "hit": "game:block/wood"
+  }
+}

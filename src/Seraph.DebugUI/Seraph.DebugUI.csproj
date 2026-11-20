@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>vsslssmod.DebugUI</AssemblyName>
+    <Title>vsslssmod</Title>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Seraph/Seraph.csproj" />
+    <Reference Include="VintagestoryAPI"><HintPath>$(VsGamePath)/VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSImGui"><HintPath>$(VsImGuiPath)/VSImGui.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ImGui.NET"><HintPath>$(VsImGuiPath)/ImGui.NET.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenTK.Graphics"><HintPath>$(VsGamePath)/Lib/OpenTK.Graphics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="cairo-sharp"><HintPath>$(VsGamePath)/Lib/cairo-sharp.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="ValidateImGuiReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(VsImGuiPath)/VSImGui.dll')" Text="Set -p:VsImGuiPath to vsimgui 1.2.7." />
+  </Target>
+</Project>

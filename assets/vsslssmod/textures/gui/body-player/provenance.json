@@ -1,0 +1,35 @@
+{
+  "gameVersion": "1.22.7",
+  "originalRightsHolder": "Anego Studios",
+  "copyright": "Original Vintage Story model and texture rights remain with their owners.",
+  "license": "Project-generated 2D projections; underlying game model/skin rights remain with Anego Studios. Not relicensed as project MIT.",
+  "distribution": "Generated front outline and six picking masks only. No player 3D shapes or original skin atlas.",
+  "sourceFiles": [
+    {
+      "path": "assets/game/shapes/entity/humanoid/seraph.json",
+      "sha256": "82c72f32ea0efd69d19b07b094bc6aa4b9cc4c50de2e9639ec0f6a7d1ebe3651"
+    },
+    {
+      "path": "assets/game/textures/entity/humanoid/seraph-naked-hairless.png",
+      "sha256": "116893a5156140fcfb74a2a391798cd103a83eaf09e5be20f048e35df0c8dbf5"
+    }
+  ],
+  "processing": {
+    "projection": "orthographic; front; elevation 4 degrees",
+    "canvas": [
+      256,
+      640
+    ],
+    "pose": "Inspection A-pose: UpperArmR X=8; UpperArmL X=-8; UpperFootR X=3; UpperFootL X=-3; body rotations otherwise zero; small facial rotations retained",
+    "omitted": "Hair, clothing, held items and disabled faces",
+    "renderer": "Independent SVG projection of native cuboids and UVs; Chrome SVG rasterization; not an in-game screenshot",
+    "regionSplits": "Coarse UI groups: Head+Neck; UpperTorso+LowerTorso; each UpperArm+LowerArm; each UpperFoot+LowerFoot. These six UI groups correspond to supported parent body regions; runtime colors and hover details use server snapshots.",
+    "neutralOutline": {
+      "color": "#ffffff",
+      "widthAt256": 2,
+      "regionDividers": "Inner rings of 6 occlusion-resolved visible region unions; no per-face subdivisions",
+      "interior": "flat neutral; outline-white variant has transparent region interiors"
+    },
+    "livePlayerAppearance": false
+  }
+}

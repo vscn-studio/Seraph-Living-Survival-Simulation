@@ -1,0 +1,8 @@
+[
+  {
+    "op": "add",
+    "file": "game:entities/humanoid/player.json",
+    "path": "/client/behaviors/-",
+    "value": { "code": "vsslssmodclosedeyerest" }
+  }
+]

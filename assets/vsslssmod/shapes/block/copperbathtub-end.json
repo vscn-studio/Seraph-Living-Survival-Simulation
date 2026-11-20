@@ -1,0 +1,548 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "copper": [
+      16,
+      16
+    ]
+  },
+  "textures": {
+    "copper": "game:block/metal/sheet-plain/copper1"
+  },
+  "elements": [
+    {
+      "name": "extension-right-bath-floor",
+      "from": [
+        0,
+        0,
+        1.5
+      ],
+      "to": [
+        13,
+        0.75,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            13.0,
+            0.75
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            13,
+            0.75
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            3.0,
+            0,
+            16.0,
+            0.75
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            13.0,
+            13
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            13.0,
+            13
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-front-wall",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        15.5,
+        9,
+        1.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            1.5,
+            9
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.9696969696969697,
+            0,
+            16.0,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            1.5
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            1.5
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-back-wall",
+      "from": [
+        0,
+        0,
+        14.5
+      ],
+      "to": [
+        15.5,
+        9,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            1.5,
+            9
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.9696969696969697,
+            0,
+            16.0,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            1.5
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            15.030303030303031,
+            1.5
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-end-wall",
+      "from": [
+        13,
+        0,
+        1.5
+      ],
+      "to": [
+        16,
+        9,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.0,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            13,
+            9
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.0,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            13,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.0,
+            13
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.0,
+            13
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-end-band",
+      "from": [
+        15.649999999999999,
+        1,
+        3.75
+      ],
+      "to": [
+        15.899999999999999,
+        1.75,
+        12.25
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            0.25,
+            0.75
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            8.5,
+            0.75
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            0.25,
+            0.75
+          ]
+        },
+        "west": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            8.5,
+            0.75
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            0.25,
+            8.5
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            0.25,
+            8.5
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-front-rim",
+      "from": [
+        0,
+        9,
+        -0.5
+      ],
+      "to": [
+        16,
+        10,
+        1.75
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            2.25,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            2.25,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            2.25
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            2.25
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-back-rim",
+      "from": [
+        0,
+        9,
+        14.25
+      ],
+      "to": [
+        16,
+        10,
+        16.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            2.25,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            2.25,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            2.25
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            16.0,
+            2.25
+          ],
+          "rotation": 180
+        }
+      }
+    },
+    {
+      "name": "extension-right-end-rim",
+      "from": [
+        13,
+        9,
+        1.75
+      ],
+      "to": [
+        16.5,
+        10,
+        14.25
+      ],
+      "faces": {
+        "north": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.5,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            12.5,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.5,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#copper",
+          "uv": [
+            0,
+            0,
+            12.5,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.5,
+            12.5
+          ]
+        },
+        "down": {
+          "texture": "#copper",
+          "uv": [
+            0.0,
+            0,
+            3.5,
+            12.5
+          ],
+          "rotation": 180
+        }
+      }
+    }
+  ]
+}

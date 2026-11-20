@@ -1,0 +1,16 @@
+{
+  "code": "chimney-middle",
+  "class": "vsslssmodchimneypart",
+  "shape": { "base": "vsslssmod:block/chimney-middle" },
+  "drawtype": "json",
+  "renderpass": "OpaqueNoCull",
+  "blockmaterial": "Stone",
+  "textures": { "granite1": { "base": "game:block/stone/cobblestone/granite1" } },
+  "resistance": 8,
+  "sideopaque": { "all": false },
+  "sidesolid": { "all": false },
+  "faceCullMode": "NeverCull",
+  "rainpermeable": true,
+  "maxstacksize": 64,
+  "sounds": { "place": "game:block/stone", "break": "game:block/stone", "hit": "game:block/stone" }
+}

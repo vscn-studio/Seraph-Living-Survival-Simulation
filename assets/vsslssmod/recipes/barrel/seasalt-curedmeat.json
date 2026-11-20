@@ -1,0 +1,9 @@
+{
+  "code": "seasalt-curedmeat",
+  "sealHours": 480,
+  "ingredients": [
+    { "type": "item", "code": "vsslssmod:seasalt", "quantity": 2 },
+    { "type": "item", "code": "game:*-raw", "name": "meat", "quantity": 1, "allowedVariants": ["redmeat", "poultry", "bushmeat", "fish"] }
+  ],
+  "output": { "type": "item", "code": "game:{meat}-cured", "stackSize": 1, "attributes": { "vsslssmodSaltGrams": 40 } }
+}

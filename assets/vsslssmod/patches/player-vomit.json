@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "file": "game:shapes/entity/humanoid/seraph-faceless.json",
+    "path": "/animations/-",
+    "value": {
+      "name": "Seraph vomiting",
+      "code": "vsslssmod-vomit",
+      "quantityframes": 30,
+      "onActivityStopped": "Rewind",
+      "onAnimationEnd": "Stop",
+      "keyframes": [
+        {
+          "frame": 0,
+          "elements": {
+            "LowerTorso": { "rotationX": -8, "offsetY": -1 },
+            "UpperTorso": { "rotationX": -24 },
+            "Head": { "rotationX": 18 }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:entities/humanoid/player.json",
+    "path": "/client/animations/-",
+    "value": {
+      "code": "vsslssmod-vomit",
+      "animation": "vsslssmod-vomit",
+      "weight": 100,
+      "blendMode": "Average",
+      "supressDefaultAnimation": true,
+      "easeInSpeed": 8,
+      "easeOutSpeed": 8,
+      "elementWeight": { "LowerTorso": 100, "UpperTorso": 100, "Head": 100 }
+    }
+  }
+]

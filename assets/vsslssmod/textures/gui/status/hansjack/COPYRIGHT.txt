@@ -1,0 +1,4 @@
+All PNG artwork in this directory: © HansJack.
+Released under CC0; see THIRD-PARTY-NOTICES/CC0-1.0.txt in the package.
+Source artwork: icons/status/HansJack/ in the source repository.
+Per-file authors, sources, licenses, dimensions, hashes and modifications: attribution.json.

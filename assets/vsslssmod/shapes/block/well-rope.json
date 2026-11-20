@@ -1,0 +1,22 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "rope": "game:block/cloth/burlap/string"
+  },
+  "elements": [
+    {
+      "name": "bucket-rope",
+      "from": [7.5, 0.0, 7.5],
+      "to": [8.5, 16.0, 8.5],
+      "faces": {
+        "north": { "texture": "#rope" },
+        "south": { "texture": "#rope" },
+        "east": { "texture": "#rope" },
+        "west": { "texture": "#rope" },
+        "up": { "texture": "#rope" },
+        "down": { "texture": "#rope" }
+      }
+    }
+  ]
+}

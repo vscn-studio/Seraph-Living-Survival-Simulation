@@ -1,0 +1,3120 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": {
+    "drainpottexture_0": "game:block/wood/treetrunk/debarked/birch",
+    "drainpottexture_1": "game:block/wood/debarked/birch",
+    "drainpottexture_2": "game:block/wood/debarked/oak",
+    "drainpottexture_3": "game:block/wood/treetrunk/debarked/oak"
+  },
+  "elements": [
+    {
+      "name": "voxel_0",
+      "from": [
+        7.5,
+        6.444444444444445,
+        3.5
+      ],
+      "to": [
+        8.5,
+        7.777777777777778,
+        4.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            9.0,
+            7.0,
+            7.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            7.0,
+            9.0,
+            9.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "voxel_1",
+      "from": [
+        7.5,
+        6.888888888888889,
+        4.5
+      ],
+      "to": [
+        8.5,
+        7.777777777777778,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            0.0,
+            12.0,
+            7.0,
+            14.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            12.0,
+            16.0,
+            14.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            7.0,
+            7.0,
+            0.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            9.0,
+            9.0,
+            16.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "name": "voxel_2",
+      "from": [
+        5.0,
+        6.444444444444445,
+        10.0
+      ],
+      "to": [
+        5.5,
+        9.555555555555555,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            13.0,
+            8.0,
+            14.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            3.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            14.0,
+            12.0,
+            13.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            4.0,
+            14.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_3",
+      "from": [
+        5.5,
+        6.0,
+        10.0
+      ],
+      "to": [
+        7.0,
+        6.444444444444445,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            10.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            6.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            12.0,
+            10.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            10.0,
+            4.0,
+            13.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_4",
+      "from": [
+        5.5,
+        6.444444444444445,
+        9.5
+      ],
+      "to": [
+        6.0,
+        9.555555555555555,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            13.0,
+            12.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            3.0,
+            13.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_5",
+      "from": [
+        5.5,
+        6.444444444444445,
+        14.0
+      ],
+      "to": [
+        6.0,
+        9.555555555555555,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            4.0,
+            12.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            12.0,
+            13.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_6",
+      "from": [
+        5.5,
+        9.11111111111111,
+        10.0
+      ],
+      "to": [
+        6.0,
+        10.0,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            12.0,
+            12.0,
+            11.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            4.0,
+            13.0,
+            5.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_7",
+      "from": [
+        5.5,
+        9.11111111111111,
+        13.5
+      ],
+      "to": [
+        6.0,
+        10.0,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            5.0,
+            12.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            11.0,
+            13.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_8",
+      "from": [
+        5.5,
+        9.555555555555555,
+        10.5
+      ],
+      "to": [
+        6.0,
+        10.0,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            13.0,
+            11.0,
+            12.0,
+            5.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            5.0,
+            13.0,
+            11.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_9",
+      "from": [
+        6.0,
+        6.0,
+        9.5
+      ],
+      "to": [
+        10.0,
+        6.444444444444445,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            4.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            13.0,
+            4.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            3.0,
+            12.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_10",
+      "from": [
+        6.0,
+        6.0,
+        14.0
+      ],
+      "to": [
+        10.0,
+        6.444444444444445,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            4.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            4.0,
+            4.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            12.0,
+            12.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_11",
+      "from": [
+        6.0,
+        6.444444444444445,
+        9.0
+      ],
+      "to": [
+        10.0,
+        9.555555555555555,
+        9.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            13.0,
+            8.0,
+            14.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            3.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            14.0,
+            4.0,
+            13.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            2.0,
+            12.0,
+            3.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_12",
+      "from": [
+        6.0,
+        6.444444444444445,
+        14.5
+      ],
+      "to": [
+        10.0,
+        9.555555555555555,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            3.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            12.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            13.0,
+            8.0,
+            14.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            3.0,
+            4.0,
+            2.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            13.0,
+            12.0,
+            14.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_13",
+      "from": [
+        6.0,
+        9.11111111111111,
+        9.5
+      ],
+      "to": [
+        6.5,
+        10.0,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            13.0,
+            11.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            3.0,
+            12.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_14",
+      "from": [
+        6.0,
+        9.11111111111111,
+        14.0
+      ],
+      "to": [
+        6.5,
+        10.0,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            4.0,
+            11.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            12.0,
+            12.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_15",
+      "from": [
+        6.0,
+        9.555555555555555,
+        10.0
+      ],
+      "to": [
+        6.5,
+        10.0,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            12.0,
+            11.0,
+            11.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            4.0,
+            12.0,
+            5.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_16",
+      "from": [
+        6.0,
+        9.555555555555555,
+        13.5
+      ],
+      "to": [
+        6.5,
+        10.0,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            12.0,
+            5.0,
+            11.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            11.0,
+            12.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_17",
+      "from": [
+        6.5,
+        9.555555555555555,
+        9.5
+      ],
+      "to": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            13.0,
+            4.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            3.0,
+            11.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_18",
+      "from": [
+        6.5,
+        9.555555555555555,
+        14.0
+      ],
+      "to": [
+        10.0,
+        10.0,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            11.0,
+            4.0,
+            4.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            12.0,
+            11.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_19",
+      "from": [
+        7.0,
+        6.0,
+        10.0
+      ],
+      "to": [
+        10.5,
+        6.444444444444445,
+        11.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            10.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            6.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            10.0,
+            12.0,
+            3.0,
+            10.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            4.0,
+            10.0,
+            6.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_20",
+      "from": [
+        7.0,
+        6.0,
+        11.0
+      ],
+      "to": [
+        7.5,
+        6.444444444444445,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            10.0,
+            10.0,
+            9.0,
+            9.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            6.0,
+            10.0,
+            7.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_21",
+      "from": [
+        7.0,
+        6.0,
+        11.5
+      ],
+      "to": [
+        10.5,
+        6.444444444444445,
+        12.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            10.0,
+            9.0,
+            3.0,
+            7.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            7.0,
+            10.0,
+            9.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_22",
+      "from": [
+        7.0,
+        6.0,
+        12.5
+      ],
+      "to": [
+        7.5,
+        6.444444444444445,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            10.0,
+            7.0,
+            9.0,
+            6.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            9.0,
+            10.0,
+            10.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_23",
+      "from": [
+        7.0,
+        6.0,
+        13.0
+      ],
+      "to": [
+        10.5,
+        6.444444444444445,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            15.0,
+            6.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            10.0,
+            15.0,
+            12.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            10.0,
+            6.0,
+            3.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            10.0,
+            10.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_24",
+      "from": [
+        7.5,
+        6.0,
+        11.0
+      ],
+      "to": [
+        8.5,
+        6.444444444444445,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            9.0,
+            10.0,
+            7.0,
+            9.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            7.0,
+            6.0,
+            9.0,
+            7.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_25",
+      "from": [
+        7.5,
+        6.0,
+        12.5
+      ],
+      "to": [
+        8.5,
+        6.444444444444445,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            7.0,
+            15.0,
+            9.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            9.0,
+            7.0,
+            7.0,
+            6.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            7.0,
+            9.0,
+            9.0,
+            10.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_26",
+      "from": [
+        7.5,
+        6.888888888888889,
+        8.0
+      ],
+      "to": [
+        8.5,
+        7.777777777777778,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            14.0,
+            12.0,
+            16.0,
+            14.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            7.0,
+            12.0,
+            9.0,
+            14.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            0.0,
+            12.0,
+            2.0,
+            14.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            16.0,
+            7.0,
+            14.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            0.0,
+            9.0,
+            2.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_27",
+      "from": [
+        8.5,
+        6.0,
+        11.0
+      ],
+      "to": [
+        9.0,
+        6.444444444444445,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            10.0,
+            6.0,
+            9.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            6.0,
+            7.0,
+            7.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_28",
+      "from": [
+        8.5,
+        6.0,
+        12.5
+      ],
+      "to": [
+        9.0,
+        6.444444444444445,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_0",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            7.0,
+            7.0,
+            6.0,
+            6.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_1",
+          "uv": [
+            6.0,
+            9.0,
+            7.0,
+            10.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_29",
+      "from": [
+        9.0,
+        6.0,
+        11.0
+      ],
+      "to": [
+        10.5,
+        6.444444444444445,
+        11.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            6.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            10.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            6.0,
+            10.0,
+            3.0,
+            9.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            7.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_30",
+      "from": [
+        9.0,
+        6.0,
+        12.5
+      ],
+      "to": [
+        10.5,
+        6.444444444444445,
+        13.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            15.0,
+            6.0,
+            16.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            6.0,
+            15.0,
+            7.0,
+            16.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            10.0,
+            15.0,
+            13.0,
+            16.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            9.0,
+            15.0,
+            10.0,
+            16.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            6.0,
+            7.0,
+            3.0,
+            6.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            9.0,
+            6.0,
+            10.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_31",
+      "from": [
+        9.5,
+        9.11111111111111,
+        9.5
+      ],
+      "to": [
+        10.5,
+        9.555555555555555,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            5.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            8.0,
+            13.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            5.0,
+            13.0,
+            3.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            3.0,
+            5.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_32",
+      "from": [
+        9.5,
+        9.11111111111111,
+        14.0
+      ],
+      "to": [
+        10.5,
+        9.555555555555555,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            5.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            8.0,
+            4.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            8.0,
+            13.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            13.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            5.0,
+            4.0,
+            3.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            12.0,
+            5.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_33",
+      "from": [
+        9.5,
+        9.555555555555555,
+        10.0
+      ],
+      "to": [
+        10.5,
+        10.0,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            5.0,
+            12.0,
+            3.0,
+            11.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            4.0,
+            5.0,
+            5.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_34",
+      "from": [
+        9.5,
+        9.555555555555555,
+        13.5
+      ],
+      "to": [
+        10.5,
+        10.0,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            7.0,
+            12.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            5.0,
+            5.0,
+            3.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            11.0,
+            5.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_35",
+      "from": [
+        10.0,
+        6.444444444444445,
+        9.5
+      ],
+      "to": [
+        10.5,
+        9.11111111111111,
+        10.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            9.0,
+            4.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            9.0,
+            13.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            9.0,
+            13.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            9.0,
+            4.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            13.0,
+            3.0,
+            12.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            3.0,
+            4.0,
+            4.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_36",
+      "from": [
+        10.0,
+        6.444444444444445,
+        14.0
+      ],
+      "to": [
+        10.5,
+        9.11111111111111,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            9.0,
+            4.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            9.0,
+            4.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            9.0,
+            13.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            9.0,
+            13.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            4.0,
+            3.0,
+            3.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            12.0,
+            4.0,
+            13.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_37",
+      "from": [
+        10.0,
+        9.11111111111111,
+        10.0
+      ],
+      "to": [
+        11.0,
+        9.555555555555555,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            4.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            8.0,
+            12.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            14.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            5.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            12.0,
+            2.0,
+            11.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            2.0,
+            4.0,
+            4.0,
+            5.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_38",
+      "from": [
+        10.0,
+        9.11111111111111,
+        13.5
+      ],
+      "to": [
+        11.0,
+        9.555555555555555,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            4.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            8.0,
+            5.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            8.0,
+            14.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            11.0,
+            8.0,
+            12.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            5.0,
+            2.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            2.0,
+            11.0,
+            4.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_39",
+      "from": [
+        10.0,
+        9.555555555555555,
+        10.5
+      ],
+      "to": [
+        10.5,
+        10.0,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            3.0,
+            7.0,
+            4.0,
+            8.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            12.0,
+            7.0,
+            13.0,
+            8.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            7.0,
+            11.0,
+            8.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            4.0,
+            11.0,
+            3.0,
+            5.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            5.0,
+            4.0,
+            11.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_40",
+      "from": [
+        10.5,
+        6.444444444444445,
+        10.0
+      ],
+      "to": [
+        11.0,
+        9.11111111111111,
+        14.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            9.0,
+            3.0,
+            15.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            9.0,
+            12.0,
+            15.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            13.0,
+            9.0,
+            14.0,
+            15.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            4.0,
+            9.0,
+            12.0,
+            15.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            12.0,
+            2.0,
+            4.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            2.0,
+            4.0,
+            3.0,
+            12.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    },
+    {
+      "name": "voxel_41",
+      "from": [
+        10.5,
+        9.11111111111111,
+        10.5
+      ],
+      "to": [
+        11.0,
+        9.555555555555555,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            2.0,
+            8.0,
+            3.0,
+            9.0
+          ]
+        },
+        "east": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            8.0,
+            11.0,
+            9.0
+          ]
+        },
+        "south": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            13.0,
+            8.0,
+            14.0,
+            9.0
+          ]
+        },
+        "west": {
+          "texture": "#drainpottexture_2",
+          "uv": [
+            5.0,
+            8.0,
+            11.0,
+            9.0
+          ]
+        },
+        "up": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            3.0,
+            11.0,
+            2.0,
+            5.0
+          ]
+        },
+        "down": {
+          "texture": "#drainpottexture_3",
+          "uv": [
+            2.0,
+            5.0,
+            3.0,
+            11.0
+          ]
+        }
+      },
+      "rotationOrigin": [
+        4.0,
+        6.0,
+        8.0
+      ]
+    }
+  ]
+}

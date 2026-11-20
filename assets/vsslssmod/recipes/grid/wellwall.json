@@ -1,0 +1,9 @@
+[
+  {
+  "ingredientPattern": "_G_,G_G,_G_",
+  "ingredients": { "G": { "type": "block", "code": "game:cobblestone-*", "name": "cobble" } },
+  "width": 3,
+  "height": 3,
+  "output": { "type": "block", "code": "vsslssmod:wellwall", "quantity": 4 }
+  }
+]

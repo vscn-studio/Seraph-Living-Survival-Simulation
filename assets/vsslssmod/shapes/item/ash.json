@@ -1,0 +1,12 @@
+{
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textures": { "ash": "vsslssmod:item/ash" },
+  "elements": [
+    { "name": "ash-lump", "from": [2, 0, 2], "to": [14, 3, 14], "faces": {
+      "north": { "texture": "#ash" }, "east": { "texture": "#ash" },
+      "south": { "texture": "#ash" }, "west": { "texture": "#ash" },
+      "up": { "texture": "#ash" }, "down": { "texture": "#ash" }
+    }}
+  ]
+}

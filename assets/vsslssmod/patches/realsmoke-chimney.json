@@ -1,0 +1,31 @@
+[
+  {
+    "dependsOn": [{ "modid": "realsmoke" }],
+    "file": "vsslssmod:blocktypes/chimney.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [
+      {
+        "name": "BlockEntityBehaviorRealGasPump",
+        "properties": {
+          "inputLocation": "below",
+          "outputLocations": ["above"],
+          "outputDistanceFromInput": 1,
+          "amountLimit": 32
+        }
+      }
+    ],
+    "side": "Universal"
+  },
+  {
+    "dependsOn": [{ "modid": "realsmoke" }, { "modid": "chiseltools" }],
+    "file": "chiseltools:blocktypes/chiseledchimney.json",
+    "op": "addmerge",
+    "path": "/sidesolid",
+    "value": {
+      "up": false,
+      "down": false
+    },
+    "side": "Universal"
+  }
+]

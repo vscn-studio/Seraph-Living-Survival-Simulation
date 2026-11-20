@@ -1,0 +1,81 @@
+{
+  "code": "drainpot",
+  "class": "vsslssmodwatertreatment",
+  "entityClass": "vsslssmodwatertreatment",
+  "placedPriorityInteract": true,
+  "drawtype": "json",
+  "blockmaterial": "Wood",
+  "shape": {
+    "base": "vsslssmod:block/drainpot"
+  },
+  "textures": {
+    "filterpottexture_0": {
+      "base": "game:block/wood/debarked/oak"
+    },
+    "filterpottexture_1": {
+      "base": "game:block/wood/treetrunk/debarked/oak"
+    },
+    "drainpottexture_0": {
+      "base": "game:block/wood/treetrunk/debarked/birch"
+    },
+    "drainpottexture_1": {
+      "base": "game:block/wood/debarked/birch"
+    },
+    "drainpottexture_2": {
+      "base": "game:block/wood/debarked/oak"
+    },
+    "drainpottexture_3": {
+      "base": "game:block/wood/treetrunk/debarked/oak"
+    },
+    "gravel": {
+      "base": "game:block/stone/gravel/granite"
+    },
+    "charcoal": {
+      "base": "game:block/coal/charcoal"
+    },
+    "linen": {
+      "base": "game:block/cloth/linen/normal1"
+    },
+    "water": {
+      "base": "game:block/liquid/waterportion"
+    }
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "emitSideAo": {
+    "all": false
+  },
+  "lightAbsorption": 0,
+  "rainpermeable": true,
+  "resistance": 2,
+  "maxstacksize": 16,
+  "sounds": {
+    "place": "game:block/wood",
+    "break": "game:block/wood"
+  },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "vsslssmod": [
+      "*"
+    ]
+  },
+  "shapeInventory": {
+    "base": "vsslssmod:block/drainpot-inventory"
+  },
+  "attributes": {
+    "handbook": {
+      "extraSections": [
+        {
+          "title": "vsslssmod:filter-handbook-title",
+          "text": "vsslssmod:filter-handbook-drainpot"
+        }
+      ]
+    }
+  }
+}

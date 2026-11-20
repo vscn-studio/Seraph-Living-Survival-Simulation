@@ -1,0 +1,51 @@
+{
+  "code": "wellhead",
+  "class": "vsslssmodwellhead",
+  "entityClass": "vsslssmodwellhead",
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "vsslssmod": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "vsslssmod:block/wellhead"
+  },
+  "drawtype": "json",
+  "renderpass": "BlendNoCull",
+  "blockmaterial": "Stone",
+  "textures": {
+    "granite1": {
+      "base": "game:block/stone/cobblestone/granite1"
+    },
+    "woodud": {
+      "base": "game:block/wood/planks/oak1"
+    },
+    "woodwe": {
+      "base": "game:block/wood/treetrunk/debarked/oak"
+    },
+    "string": {
+      "base": "game:block/cloth/burlap/string"
+    }
+  },
+  "resistance": 8,
+  "sideopaque": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "faceCullMode": "NeverCull",
+  "rainpermeable": true,
+  "maxstacksize": 64,
+  "sounds": {
+    "place": "game:block/stone",
+    "break": "game:block/stone",
+    "hit": "game:block/stone"
+  },
+  "shapeInventory": {
+    "base": "vsslssmod:block/wellhead-inventory"
+  }
+}

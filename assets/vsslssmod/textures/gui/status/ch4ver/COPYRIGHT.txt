@@ -1,0 +1,4 @@
+All PNG artwork in this directory: © ch4Ver.
+Licensed under MIT; see THIRD-PARTY-NOTICES/Status-Icons-MIT.txt in the package.
+Source artwork: icons/status/ch4Ver/ in the source repository.
+Per-file authors, sources, licenses, dimensions, hashes and modifications: attribution.json.

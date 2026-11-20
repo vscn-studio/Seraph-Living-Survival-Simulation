@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>vsslssmod</AssemblyName>
+    <Title>vsslssmod</Title>
+  </PropertyGroup>
+  <ItemGroup Condition="Exists('$(RealSmokePath)')">
+    <Reference Include="RealSmoke"><HintPath>$(RealSmokePath)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <ItemGroup Condition="!Exists('$(RealSmokePath)')">
+    <Compile Remove="Server/RealSmokeGasTransport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../assets/vsslssmod/config/foods.json" LogicalName="Seraph.FoodDefaults" />
+    <ProjectReference Include="../Seraph.Application/Seraph.Application.csproj" />
+    <Reference Include="VintagestoryAPI"><HintPath>$(VsGamePath)/VintagestoryAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="protobuf-net"><HintPath>$(VsGamePath)/Lib/protobuf-net.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenTK.Graphics"><HintPath>$(VsGamePath)/Lib/OpenTK.Graphics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="OpenTK.Mathematics"><HintPath>$(VsGamePath)/Lib/OpenTK.Mathematics.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="cairo-sharp"><HintPath>$(VsGamePath)/Lib/cairo-sharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSSurvivalMod"><HintPath>$(VsGamePath)/Mods/VSSurvivalMod.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VSEssentials"><HintPath>$(VsGamePath)/Mods/VSEssentials.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(VsGamePath)/Lib/0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="ValidateGameReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(VsGamePath)/VintagestoryAPI.dll')" Text="Set -p:VsGamePath to a Vintage Story 1.22.x installation." />
+  </Target>
+</Project>
+

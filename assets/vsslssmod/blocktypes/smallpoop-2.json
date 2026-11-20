@@ -1,0 +1,82 @@
+{
+  "code": "smallpoop-2",
+  "shape": {
+    "base": "game:item/rot",
+    "scale": 0.85,
+    "offsetX": -0.193437,
+    "offsetY": 0.004,
+    "offsetZ": 0.026562,
+    "overlays": [
+      {
+        "base": "game:item/rot",
+        "scale": 0.85,
+        "offsetX": 0.246562,
+        "offsetY": 0.004,
+        "offsetZ": 0.026562,
+        "selectiveElements": [
+          "Origin/Cube1",
+          "Origin/Cube3",
+          "Origin/Cube4",
+          "Origin/Cube5",
+          "Origin/shroomie 1/*",
+          "Origin/Cube10",
+          "Origin/Cube11",
+          "Origin/Cube12",
+          "Origin/Cube13",
+          "Origin/Cube14",
+          "Origin/Cube15",
+          "Origin/Cube16"
+        ]
+      }
+    ],
+    "selectiveElements": [
+      "Origin/Cube1",
+      "Origin/Cube3",
+      "Origin/Cube4",
+      "Origin/Cube5",
+      "Origin/shroomie 1/*",
+      "Origin/Cube10",
+      "Origin/Cube11",
+      "Origin/Cube12",
+      "Origin/Cube13",
+      "Origin/Cube14",
+      "Origin/Cube15",
+      "Origin/Cube16"
+    ]
+  },
+  "drawtype": "json",
+  "blockmaterial": "Soil",
+  "textures": {
+    "rot": {
+      "base": "game:block/soil/fertcompost"
+    },
+    "base": {
+      "base": "game:block/soil/fertcompost"
+    }
+  },
+  "lightabsorption": 0,
+  "emitsideao": {
+    "all": false
+  },
+  "resistance": 0.25,
+  "sideopaque": {
+    "all": false
+  },
+  "sideao": {
+    "all": false
+  },
+  "sidesolid": {
+    "all": false
+  },
+  "collisionbox": null,
+  "selectionbox": {
+    "x1": 0.112626,
+    "y1": 0,
+    "z1": 0.332624,
+    "x2": 0.887374,
+    "y2": 0.171375,
+    "z2": 0.667374
+  },
+  "replaceable": 5900,
+  "maxstacksize": 32
+}
