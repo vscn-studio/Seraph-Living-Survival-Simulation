@@ -1,10 +1,8 @@
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Text.Json;
 using HarmonyLib;
 using Seraph.Server;
 using Vintagestory.API.Common;
-using Vintagestory.API.Datastructures;
 using Vintagestory.GameContent;
 
 namespace Seraph.World;
@@ -20,7 +18,9 @@ internal sealed class RecipeMetadataCompatibility : IDisposable
     private static int owners;
     private static Harmony? harmony;
     private static ILogger? diagnosticLogger;
-    private static readonly HashSet<string> reported = [];
+    private const int MaxDiagnosticWarnings = 32;
+    private static readonly HashSet<(string Kind, EnumItemClass Class, int Id)> reported = [];
+    private static volatile bool diagnosticLimitReached;
 
     internal RecipeMetadataCompatibility() : this(null) { }
 
@@ -68,7 +68,7 @@ internal sealed class RecipeMetadataCompatibility : IDisposable
     private static bool CookingEquals(ItemStack input, IWorldAccessor world, ItemStack? required, string[] ignored)
     {
         var result = Comparable(input, required).Equals(world, required, ignored);
-        if (!result) Report("cooking", input, required);
+        if (!result) Report("cooking", input, required, ignored);
         return result;
     }
 
@@ -76,58 +76,46 @@ internal sealed class RecipeMetadataCompatibility : IDisposable
     {
         var candidate = input is null ? null : Comparable(input, required);
         var result = required.Equals(world, candidate, ignored);
-        if (!result) Report("json", input, required);
+        if (!result) Report("json", input, required, ignored);
         return result;
     }
 
     private static bool HandbookEquals(ItemStack left, IWorldAccessor world, ItemStack? right, string[] ignored)
     {
         var result = Comparable(left, null).Equals(world, right is null ? null : Comparable(right, null), ignored);
-        if (!result) Report("handbook", left, right);
+        if (!result) Report("handbook", left, right, ignored);
         return result;
     }
 
-    private static void Report(string kind, ItemStack? input, ItemStack? required)
+    private static void Report(string kind, ItemStack? input, ItemStack? required, string[]? ignored)
     {
-        if (diagnosticLogger is null || input is null || required is null) return;
-        var inputKeys = UnknownKeys(input).Order(StringComparer.Ordinal).ToArray();
-        var requiredKeys = UnknownKeys(required).Order(StringComparer.Ordinal).ToArray();
-        if (inputKeys.Length == 0 && requiredKeys.Length == 0) return;
-        var signature = $"{kind}|{input.Collectible.Code}|{required.Collectible.Code}|{string.Join(',', inputKeys)}|{string.Join(',', requiredKeys)}";
+        var logger = diagnosticLogger;
+        if (logger is null || diagnosticLimitReached || input is null || required is null
+            || input.Class != required.Class || input.Id != required.Id) return;
+        var sample = (kind, input.Class, input.Id);
+        string inputKeys, requiredKeys;
         lock (reported)
         {
-            if (!reported.Add(signature)) return;
+            if (diagnosticLimitReached || reported.Contains(sample)) return;
+            inputKeys = string.Join(", ", UnknownKeys(input, ignored));
+            requiredKeys = string.Join(", ", UnknownKeys(required, ignored));
+            if (inputKeys.Length == 0 && requiredKeys.Length == 0) return;
+            reported.Add(sample);
+            diagnosticLimitReached = reported.Count >= MaxDiagnosticWarnings;
         }
         // Ingredient comparison callbacks do not expose their parent recipe. Keep that
         // limitation explicit instead of reporting the required item code as a recipe.
-        diagnosticLogger.Warning("[vsslssmod] Recipe metadata mismatch: recipeType={0}, recipeCode=<unavailable>, input={1}, required={2}, input unknown keys=[{3}], required unknown keys=[{4}]; matching remains strict.",
-            kind, input.Collectible.Code, required.Collectible.Code, string.Join(", ", inputKeys), string.Join(", ", requiredKeys));
+        logger.Warning("[vsslssmod] Recipe metadata mismatch: recipeType={0}, recipeCode=<unavailable>, input={1}, required={2}, input unknown keys=[{3}], required unknown keys=[{4}]; matching remains strict.",
+            kind, input.Collectible.Code, required.Collectible.Code, inputKeys, requiredKeys);
     }
 
-    private static IEnumerable<string> UnknownKeys(ItemStack stack)
+    private static IEnumerable<string> UnknownKeys(ItemStack stack, string[]? ignored)
     {
-        // TreeAttribute's JSON helper does not escape legacy StringAttribute values,
-        // so parse each value independently and fall back to its native attribute type.
         foreach (var pair in stack.Attributes)
         {
-            if (AnnotationKeys.Contains(pair.Key, StringComparer.Ordinal)) continue;
-            var kind = pair.Value.ToJsonToken() is { } token
-                ? ValueKind(token, pair.Value)
-                : JsonValueKind.Undefined;
-            yield return $"{pair.Key}:{kind}";
-        }
-    }
-
-    private static JsonValueKind ValueKind(string token, IAttribute value)
-    {
-        try
-        {
-            using var document = JsonDocument.Parse(token);
-            return document.RootElement.ValueKind;
-        }
-        catch (JsonException)
-        {
-            return value is StringAttribute ? JsonValueKind.String : JsonValueKind.Undefined;
+            if (Array.IndexOf(AnnotationKeys, pair.Key) >= 0
+                || (ignored is not null && Array.IndexOf(ignored, pair.Key) >= 0)) continue;
+            yield return $"{pair.Key}:{pair.Value.GetType().Name}";
         }
     }
 
@@ -158,6 +146,10 @@ internal sealed class RecipeMetadataCompatibility : IDisposable
         harmony?.UnpatchAll(PatchId);
         harmony = null;
         diagnosticLogger = null;
-        lock (reported) reported.Clear();
+        lock (reported)
+        {
+            reported.Clear();
+            diagnosticLimitReached = false;
+        }
     }
 }

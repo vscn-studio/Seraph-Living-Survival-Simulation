@@ -14,6 +14,7 @@ AssemblyLoadContext.Default.Resolving += (_, name) => {
 try
 {
     var mod = Assembly.Load("vsslssmod");
+    if (args.Contains("--stone-firepit")) { Assembly.Load("VintagestoryLib"); StoneFirepitChecks.Run(); return 0; }
     if (args.Contains("--water-immersion")) { WaterImmersionChecks.Run(); return 0; }
     if (args.Contains("--bed-rest")) {
         Assembly.Load("VintagestoryLib");

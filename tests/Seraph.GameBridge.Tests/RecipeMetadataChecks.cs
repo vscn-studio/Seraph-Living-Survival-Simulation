@@ -113,14 +113,25 @@ internal static class RecipeMetadataChecks
             water.StackSize = 99;
             Require(!oil.Matches(oilInputs), "oil accepts insufficient water"); water.StackSize = 100;
             Require(!oil.Matches([Stack("saltwaterportion", 100), flour, flour.Clone(), flour.Clone()]), "oil accepts seawater");
+            var unrelated = Stack("salt");
+            unrelated.Attributes.SetString("thirdparty:identity", "special");
+            for (var i = 0; i < 1000; i++)
+                Require(ingredient.GetMatchingStack(unrelated) is null, "unrelated cooking ingredient matched");
+            Require(recipeWarnings.Count == 0, "unrelated collectibles generated metadata warnings");
             water.Attributes.SetString("thirdparty:identity", "special");
+            water.Attributes.SetInt("timeFrozen", 1);
             Require(ingredient.GetMatchingStack(water) is null, "foreign attributes ignored");
+            water.Attributes.SetString("thirdparty:other", "different key set");
+            Require(ingredient.GetMatchingStack(water) is null, "repeat comparison loosened matching");
             Require(recipeWarnings.Count == 1
                 && recipeWarnings[0].Contains("recipeCode=<unavailable>", StringComparison.Ordinal)
                 && recipeWarnings[0].Contains("thirdparty:identity:String", StringComparison.Ordinal)
+                && !recipeWarnings[0].Contains("timeFrozen", StringComparison.Ordinal)
                 && !recipeWarnings[0].Contains("recipeCode=game:waterportion", StringComparison.Ordinal),
                 "metadata mismatch diagnostic must show the unknown key and value type without mislabeling an item as a recipe");
             water.Attributes.RemoveAttribute("thirdparty:identity");
+            water.Attributes.RemoveAttribute("thirdparty:other");
+            water.Attributes.RemoveAttribute("timeFrozen");
             var required = new JsonItemStack { Type = EnumItemClass.Item, Code = new("game:waterportion"), ResolvedItemStack = Stack("waterportion") };
             Require(required.Matches(world, water), "JSON liquid requirement failed");
             required.ResolvedItemStack.Attributes.SetString("vsslssmod:pathogens-v1", "{}");
@@ -162,6 +173,17 @@ internal static class RecipeMetadataChecks
                 foreach (var component in components) component.Dispose();
             }
             Console.WriteLine("PASS native oil, dough consumption and curing/pickling handbook; required attributes, quantities, liquids and real metadata preserved");
+            for (var i = 0; i < 64; i++)
+            {
+                var item = new Item { Code = new("test:ingredient-" + i), ItemId = 2000 + i };
+                AccessTools.Field(typeof(CollectibleObject), "api").SetValue(item, api);
+                ingredient.ValidStacks[0].ResolvedItemStack = new ItemStack(item);
+                var input = new ItemStack(item);
+                input.Attributes.SetString("thirdparty:identity", "special");
+                Require(ingredient.GetMatchingStack(input) is null, "diagnostic cap loosened matching");
+            }
+            Require(recipeWarnings.Count == 32, "expected 32 sampled warnings across all comparisons");
+            Console.WriteLine("PASS recipe diagnostics: 1000 unrelated comparisons silent, repeated item sampled once, 32-warning limit");
         }
         finally { RecipeBase.CollectiblePreSearchResultsCache.Clear(); }
     }

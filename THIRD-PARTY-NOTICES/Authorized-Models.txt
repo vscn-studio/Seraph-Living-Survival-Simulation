@@ -19,3 +19,17 @@ remain the property of their respective rights holders.
 
 以上模型版权归各自作者所有，作者授权本模组使用；不改标为 MIT，
 不授予其他项目使用权。此说明记录维护者确认的授权，不替代作者原始授权凭证。
+
+Stone-ring firepit / 围石篝火
+Source: 围石篝火_2_blockbench.json, supplied by the project maintainer
+for integration on 2026-11-21.
+Copyright KitamuraEri (喜多村樱璃Eri). All rights reserved.
+The author authorized use of this model in Seraph A Living Survival
+Simulation, as confirmed by the project maintainer on 2026-11-21.
+围石篝火模型作者：KitamuraEri（喜多村樱璃Eri），已授权本模组使用。
+Runtime geometry: assets/vsslssmod/shapes/block/stonefirepit.json and
+stonefirepit-ring.json. Texture aliases were resolved to native game assets;
+the ring-only variant retains the source surround for native firepit rendering.
+This supplied artwork is excluded from the project MIT grant; no broader
+permission to reuse it is asserted. Native firepit geometry, settings and
+textures remain Anego Studios material and are not relicensed by this project.
