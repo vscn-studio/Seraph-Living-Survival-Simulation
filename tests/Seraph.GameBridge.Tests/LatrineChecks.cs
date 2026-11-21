@@ -23,7 +23,9 @@ internal static class LatrineChecks
         var add = adapter.GetMethod("Add", hidden)!;
         var local = new Item { Code = new("vsslssmod:manure"), ItemId = 101, MaxStackSize = 64,
             Attributes = JsonObject.FromJson(File.ReadAllText(Path.Combine(root, "assets/vsslssmod/itemtypes/manure.json")))["attributes"] };
-        var natural = new Item { Code = new("naturalfertilizer:manure"), ItemId = 102, MaxStackSize = 64 };
+        var slurryProps = JsonObject.FromJson(File.ReadAllText(Path.Combine(root, "assets/vsslssmod/itemtypes/manureslurryportion.json")))["attributes"];
+        var localSlurry = new Item { Code = new("vsslssmod:manureslurryportion"), ItemId = 105, MaxStackSize = 5000, Attributes = slurryProps };
+        var natural = new Item { Code = new("naturalfertilizer:manureslurryportion"), ItemId = 102, MaxStackSize = 5000, Attributes = slurryProps };
         var foreign = new Item { Code = new("game:grain-flax"), ItemId = 103 };
         var block = new BlockBarrel { Code = new("game:barrel"), BlockId = 70 };
         var latrinePos = new BlockPos(5, 21, 8, 0);
@@ -57,7 +59,7 @@ internal static class LatrineChecks
         var world = Proxy<IWorldAccessor>((method, args) => method.Name switch
         {
             "get_BlockAccessor" => accessor, "get_ElapsedMilliseconds" => 100L,
-            "GetItem" => ((AssetLocation)args![0]!).Domain == "naturalfertilizer" ? (naturalLoaded ? natural : null) : local,
+            "GetItem" => ((AssetLocation)args![0]!).Domain == "naturalfertilizer" ? (naturalLoaded ? natural : null) : localSlurry,
             "get_Side" => EnumAppSide.Server,
             _ => throw new Exception("Unexpected barrel world call " + method.Name)
         });
@@ -71,6 +73,8 @@ internal static class LatrineChecks
         });
         void Init(BlockEntityBarrel target) { target.Api = core; target.Inventory.Api = core; }
         Init(barrel);
+        foreach (var item in new[] { local, localSlurry, natural, foreign })
+            typeof(CollectibleObject).GetField("api", hidden)!.SetValue(item, core);
         object? Read() => read.Invoke(null, [world, latrinePos]);
         void Add(object storage, int count) => add.Invoke(storage, [world, count, null, null]);
         void RejectAdd(object storage, int count)
@@ -90,53 +94,73 @@ internal static class LatrineChecks
         Require(Read() is null, "Non-manure Natural Fertilizer content accepted."); barrel.Inventory[0].Itemstack = null;
         var storage = Read() ?? throw new Exception("Empty barrel rejected.");
         Add(storage, 3);
-        Require(barrel.Inventory[0].Itemstack?.Item == local && barrel.Inventory[0].StackSize == 3
-            && dirtyCount > 0 && barrel.Inventory.DirtySlots.Contains(0), "Waste did not enter the native barrel inventory or sync.");
+        Require(barrel.Inventory[0].Empty && barrel.Inventory[1].Itemstack?.Item == localSlurry && barrel.Inventory[1].StackSize == 300
+            && dirtyCount > 0 && barrel.Inventory.DirtySlots.Contains(1), "Three 1 kg portions did not produce 3 L of liquid slurry.");
         RejectAdd(storage, 3);
-        Require(barrel.Inventory[0].StackSize == 3, "Stale action changed barrel contents.");
-        storage = Read()!;
-        Add(storage, 2);
-        Require(barrel.Inventory[0].StackSize == 5, "Existing manure not preserved.");
+        Require(barrel.Inventory[1].StackSize == 300, "Stale action changed barrel contents.");
+        Add(Read()!, 2);
+        Require(barrel.Inventory[1].StackSize == 500, "Repeated use lost slurry.");
         storage = Read()!; failDirty = true; RejectAdd(storage, 2);
-        Require(barrel.Inventory[0].StackSize == 5, "Failed update did not restore the original inventory.");
+        Require(barrel.Inventory[0].Empty && barrel.Inventory[1].StackSize == 500, "Failed update did not restore both slots.");
         storage = Read()!;
         var originalBarrel = barrel;
         barrel = new() { Block = block, Pos = originalBarrel.Pos }; Init(barrel);
-        barrel.Inventory[0].Itemstack = new ItemStack(local, 5);
+        barrel.Inventory[1].Itemstack = new ItemStack(localSlurry, 500);
         Require(!(bool)matches.Invoke(storage, [world])!, "Replacement barrel accepted by a stale action.");
         RejectAdd(storage, 1);
         barrel = originalBarrel;
-        barrel.Inventory[0].Itemstack = new ItemStack(local, 63);
+        barrel.Inventory[1].Itemstack = new ItemStack(localSlurry, 4900);
         RejectAdd(Read()!, 2); Add(Read()!, 1);
-        Require(barrel.Inventory[0].StackSize == 64, "Capacity enforcement lost or duplicated manure.");
+        Require(barrel.Inventory[1].StackSize == 5000, "50 L capacity enforcement failed.");
         RejectAdd(Read()!, 1);
-        naturalLoaded = true;
-        barrel.Inventory[0].Itemstack = null; Add(Read()!, 4);
-        Require(barrel.Inventory[0].Itemstack?.Item == natural, "Natural Fertilizer manure was not preferred when available.");
-        barrel.Inventory[0].Itemstack = new ItemStack(local, 2); Add(Read()!, 1);
-        Require(barrel.Inventory[0].Itemstack?.Item == local && barrel.Inventory[0].StackSize == 3,
-            "Enabling Natural Fertilizer replaced existing local manure.");
-        // Actual mass survives legacy/new mixing and splitting without changing item counts.
-        barrel.Inventory[0].Itemstack = new ItemStack(local, 1);
-        add.Invoke(Read()!, [world, 1, null, 1999d]);
-        var mixed = barrel.Inventory[0].Itemstack!;
-        Require(Math.Abs(mixed.Attributes.GetDouble("vsslssmod:manureMassG") * mixed.StackSize - 2099) < 1e-9,
-            "Legacy/new manure mixing lost mass.");
-        var split = mixed.Clone(); split.StackSize = 1;
-        Require(Math.Abs(split.Attributes.GetDouble("vsslssmod:manureMassG") - 1049.5) < 1e-9,
-            "Splitting manure lost its per-item mass.");
-        var textureSource = BlockBarrel.getContentTexture(Proxy<ICoreClientAPI>((_, _) => null), new ItemStack(local, 32), out var fillHeight);
-        Require(textureSource is ContainerTextureSource && fillHeight > 0 && fillHeight < .75f,
-            "Local manure does not supply a native barrel fill texture and level.");
+        barrel.Inventory[1].Itemstack = new ItemStack(localSlurry, 4950);
+        Require((int)adapter.GetProperty("AvailablePortions", hidden)!.GetValue(Read())! == 0,
+            "Half a litre of room accepted a 1 L bowel portion.");
+        barrel.Inventory[1].Itemstack = null;
+        naturalLoaded = true; Add(Read()!, 4);
+        Require(barrel.Inventory[1].Itemstack?.Item == natural && barrel.Inventory[1].StackSize == 400,
+            "Natural Fertilizer slurry was not preferred when available.");
+        barrel.Inventory[1].Itemstack = new ItemStack(localSlurry, 200); Add(Read()!, 1);
+        Require(barrel.Inventory[1].Itemstack?.Item == localSlurry && barrel.Inventory[1].StackSize == 300,
+            "Enabling Natural Fertilizer replaced existing local slurry.");
+        // Legacy solid manure moves to the liquid slot, retaining mass and pathogens.
+        barrel.Inventory[1].Itemstack = null;
+        barrel.Inventory[0].Itemstack = new ItemStack(local, 2);
+        barrel.Inventory[0].Itemstack!.Attributes.SetDouble("vsslssmod:manureMassG", 1000);
+        barrel.Inventory[0].Itemstack!.Attributes.SetString("vsslssmod:pathogens-v1", "{\"shigella\":0.5}");
+        storage = Read()!; failDirty = true; RejectAdd(storage, 1);
+        Require(barrel.Inventory[0].StackSize == 2 && barrel.Inventory[1].Empty, "Failed migration lost old solids.");
+        Add(Read()!, 1);
+        var mixed = barrel.Inventory[1].Itemstack!;
+        Require(barrel.Inventory[0].Empty && mixed.StackSize == 300
+            && Math.Abs(mixed.Attributes.GetDouble("vsslssmod:manureMassG") * mixed.StackSize - 3000) < 1e-9,
+            "Legacy solid to slurry conversion lost or duplicated mass.");
+        var loads = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, double>>(mixed.Attributes.GetString("vsslssmod:pathogens-v1"))!;
+        Require(Math.Abs(loads["shigella"] * 3000 - 1000) < 1e-9, "Legacy pathogen dose was not conserved.");
+        var split = mixed.Clone(); split.StackSize = 100;
+        Require(Math.Abs(split.Attributes.GetDouble("vsslssmod:manureMassG") * 100 - 1000) < 1e-9,
+            "Splitting slurry lost its per-item mass.");
         var pollution = typeof(BlockLatrine).Assembly.GetType("Seraph.World.ManureGroundStorage", true)!.GetMethod("ContainsManure", hidden)!;
-        Require((bool)pollution.Invoke(null, [barrel])!, "Manure in a barrel no longer counts as fecal pollution.");
-        barrel.Inventory[0].Itemstack = null;
+        Require((bool)pollution.Invoke(null, [barrel])!, "Slurry in a barrel no longer counts as fecal pollution.");
+        var mixture = typeof(BlockLatrine).Assembly.GetType("Seraph.World.NativeWaterTransfer", true)!.GetMethod("SlurryMixture", hidden)!;
+        var clean = new ItemStack(natural, 200);
+        object?[] pourArgs = [world, mixed, clean, 2f, 4f, 0];
+        var poured = (ItemStack)mixture.Invoke(null, pourArgs)!;
+        Require((int)pourArgs[5]! == 100 && poured.StackSize == 400 && clean.StackSize == 200 && mixed.StackSize == 300,
+            "Partial pour did not respect capacity or mutated source stacks.");
+        loads = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, double>>(poured.Attributes.GetString("vsslssmod:pathogens-v1"))!;
+        Require(Math.Abs(loads["shigella"] * 4000 - 1000) < 1e-9, "Pouring lost pathogen dose.");
+        clean.Attributes.SetString("foreign:owner", "other");
+        Require(mixture.Invoke(null, [world, mixed, clean, 2f, 50f, 0]) is null, "Foreign identity was erased during slurry pouring.");
+        Require(mixture.Invoke(null, [world, new ItemStack(foreign), mixed, 2f, 50f, 0]) is null, "Slurry mixed into an unrelated liquid.");
+        barrel.Inventory[1].Itemstack = null;
         airGap = 3; barrel.Pos = latrinePos.AddCopy(0, -4, 0);
         storage = Read() ?? throw new Exception("Barrel beneath an air gap was rejected.");
         obstructed = true; RejectAdd(storage, 1);
         Require(Read() is null, "Obstructed air gap accepted.");
         obstructed = false; Add(Read()!, 1);
-        Require(barrel.Inventory[0].StackSize == 1, "Air-gap delivery failed.");
+        Require(barrel.Inventory[1].StackSize == 100, "Air-gap delivery failed.");
+        Console.WriteLine("PASS latrine slurry: repeated use, capacity, legacy migration, optional fertilizer, rollback, mass/pathogens, pollution and bounded liquid mixing");
         var animations = new List<string>();
         var entity = new EntityAgent();
         entity.AnimManager = Proxy<IAnimationManager>((method, args) => method.Name switch {

@@ -2,7 +2,7 @@
   "type": "code",
   "name": "Seraph A Living Survival Simulation",
   "modid": "vsslssmod",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A survival simulation featuring nutrition and digestion, hydration and water treatment, stamina and sleep, temperature, wounds and disease, hygiene, smoke exposure, wells and bathtubs.",
   "authors": [
     "HansJack",

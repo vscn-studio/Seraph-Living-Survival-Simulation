@@ -9,7 +9,7 @@ using Vintagestory.GameContent;
 
 namespace Seraph.World;
 
-/// <summary>Preserves native interactions and item-count semantics; only pure water is adapted.</summary>
+/// <summary>Preserves native interactions and item-count semantics for water and latrine slurry.</summary>
 internal sealed partial class NativeWaterTransfer : IDisposable
 {
     private const string PatchId = "vsslssmod.water";
@@ -189,14 +189,16 @@ internal sealed partial class NativeWaterTransfer : IDisposable
     {
         if (!Apis.TryGetValue(__instance, out var api)
             || api.Side != EnumAppSide.Client && !Enabled(__instance, out _)
-            || !WaterQuality.IsWater(liquidStack)) return true;
+            || !WaterQuality.IsWater(liquidStack) && !LatrineWasteStorage.IsSlurry(liquidStack)) return true;
         __result = 0;
         var content = __instance.GetContent(containerStack);
         var capacity = (containerStack.Collectible as ILiquidSink)?.CapacityLitres ?? 0;
-        var replacement = Mixture(api, content, liquidStack, desiredLitres, capacity, 15, out var moved);
+        var replacement = LatrineWasteStorage.IsSlurry(liquidStack)
+            ? SlurryMixture(api.World, content, liquidStack, desiredLitres, capacity, out var moved)
+            : Mixture(api, content, liquidStack, desiredLitres, capacity, 15, out moved);
         if (replacement is not null)
         {
-            if (fillingWell is { } well && !well.Owner.TryExtractWell(well.Position, moved / (double)
+            if (WaterQuality.IsWater(liquidStack) && fillingWell is { } well && !well.Owner.TryExtractWell(well.Position, moved / (double)
                 BlockLiquidContainerBase.GetContainableProps(liquidStack)!.ItemsPerLitre)) return false;
             __instance.SetContent(containerStack, replacement);
             __result = moved;
@@ -256,11 +258,13 @@ internal sealed partial class NativeWaterTransfer : IDisposable
     {
         if (!Apis.TryGetValue(__instance, out var api)
             || api.Side != EnumAppSide.Client && !Enabled(__instance, out _)
-            || !WaterQuality.IsWater(liquidStack)) return true;
+            || !WaterQuality.IsWater(liquidStack) && !LatrineWasteStorage.IsSlurry(liquidStack)) return true;
         __result = 0;
         if (api.World.BlockAccessor.GetBlockEntity(pos) is not BlockEntityContainer) return false;
-        var replacement = Mixture(api, __instance.GetContent(pos), liquidStack, desiredLitres,
-            __instance.CapacityLitres, WaterQuality.Ambient(api.World, pos), out var moved);
+        var replacement = LatrineWasteStorage.IsSlurry(liquidStack)
+            ? SlurryMixture(api.World, __instance.GetContent(pos), liquidStack, desiredLitres, __instance.CapacityLitres, out var moved)
+            : Mixture(api, __instance.GetContent(pos), liquidStack, desiredLitres,
+                __instance.CapacityLitres, WaterQuality.Ambient(api.World, pos), out moved);
         if (replacement is not null) { SetPlacedContent(api.World, __instance, pos, replacement); __result = moved; }
         return false;
     }

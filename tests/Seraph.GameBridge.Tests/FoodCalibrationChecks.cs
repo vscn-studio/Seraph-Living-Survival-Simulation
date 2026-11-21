@@ -29,10 +29,25 @@ internal static class FoodCalibrationChecks
             Server = new EntityServerProperties([original], new()) };
         if (!FoodCalibration.CalibrateAnimal(pig, catalog)) throw new Exception("Pig harvest was not calibrated");
         var drops = pig.Server.BehaviorsAsJsonObj[0]["drops"].AsArray()!;
-        Near(45000, drops[0]["quantity"]["avg"].AsDouble() * meat.PortionG);
+        Near(4500, drops[0]["quantity"]["avg"].AsDouble() * meat.PortionG);
+        Near(3, drops[0]["quantity"]["var"].AsDouble());
         Near(1, drops[1]["quantity"]["avg"].AsDouble());
         Near(9, original["drops"].AsArray()![0]["quantity"]["avg"].AsDouble());
         if (FoodCalibration.CalibrateAnimal(pig, catalog)) throw new Exception("Yield calibration applied twice");
+
+        // Lower the former meat budget to one tenth, including large deer. The
+        // 250 g food portion and six portions per Rustic Cookery slab stay intact.
+        foreach (var (code, weight, portions) in new[] {
+            ("game:deer-whitetail-adult-male", 100f, 12d),
+            ("game:deer-elk-adult-male", 450f, 54d) })
+        {
+            var deer = new EntityProperties { Code = new(code), Weight = weight,
+                Server = new EntityServerProperties([original], new()) };
+            if (!FoodCalibration.CalibrateAnimal(deer, catalog)) throw new Exception("Deer yield was not calibrated");
+            var deerDrops = deer.Server.BehaviorsAsJsonObj[0]["drops"].AsArray()!;
+            Near(portions, deerDrops[0]["quantity"]["avg"].AsDouble());
+            Near(1, deerDrops[1]["quantity"]["avg"].AsDouble());
+        }
 
         // A shared finished code must preserve cheap and rich input choices separately.
         var lean = Stack("game:grain-rice", 64); var rich = Stack("game:grain-flax", 64);

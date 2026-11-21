@@ -4,6 +4,7 @@ using Seraph.Core.Framework;
 using Seraph.World;
 using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
+using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 
@@ -19,23 +20,32 @@ internal static class WaterInventoryTransferChecks
     {
         T Proxy<T>(System.Func<MethodInfo, object?[]?, object?> f) => (T)RoutingProxy.Make(typeof(T), f);
         var mod = new SeraphModSystem();
-        var loader = Proxy<IModLoader>((m, _) => m.Name == "GetModSystem" ? mod : null);
+        var recipes = new RecipeRegistrySystem();
+        var loader = Proxy<IModLoader>((m, _) => m.Name == "GetModSystem"
+            ? m.IsGenericMethod && m.GetGenericArguments()[0] == typeof(RecipeRegistrySystem) ? recipes : mod : null);
         var hours = 0d;
         var calendar = Proxy<IGameCalendar>((m, _) => m.Name == "get_TotalHours" ? hours : null);
         var water = new Item { ItemId = 100, Code = new("game:waterportion"), MaxStackSize = 1000,
             Attributes = JsonObject.FromJson("{\"waterTightContainerProps\":{\"containable\":true,\"itemsPerLitre\":100}}") };
+        var slurry = new Item { ItemId = 110, Code = new("naturalfertilizer:manureslurryportion"),
+            MaxStackSize = 5000, Attributes = water.Attributes };
         var bowl = new TestBowl { BlockId = 20, Code = new("game:bowl") };
+        var barrelBlock = new TestBarrel { BlockId = 21, Code = new("game:barrel") };
+        var barrel = new BlockEntityBarrel { Block = barrelBlock, Pos = new BlockPos(1, 2, 3, 0) };
+        var accessor = Proxy<IBlockAccessor>((m, _) => m.Name == "GetBlockEntity" ? barrel : null);
         ICoreAPI api = null!;
-        var world = Proxy<IWorldAccessor>((m, _) => m.Name switch {
+        var world = Proxy<IWorldAccessor>((m, a) => m.Name switch {
             "get_Api" => api, "get_Side" => side, "get_Calendar" => calendar,
-            "GetItem" => water, "get_Blocks" => new Block[] { bowl }, _ => null
+            "GetItem" => a![0] is int id && id == 110 ? slurry : water,
+            "get_BlockAccessor" => accessor, "get_Blocks" => new Block[] { bowl, barrelBlock }, _ => null
         });
         api = Proxy<ICoreServerAPI>((m, _) => m.Name switch {
             "get_World" => world, "get_Side" => side, "get_ModLoader" => loader, _ => null
         });
         typeof(SeraphModSystem).GetField("server", BindingFlags.Instance | BindingFlags.NonPublic)!
             .SetValue(mod, new Seraph.Server.ServerCoordinator((ICoreServerAPI)api));
-        foreach (var obj in new CollectibleObject[] { water, bowl })
+        barrel.Api = api; barrel.Inventory.Api = api;
+        foreach (var obj in new CollectibleObject[] { water, slurry, bowl, barrelBlock })
             typeof(CollectibleObject).GetField("api", BindingFlags.Instance | BindingFlags.NonPublic)!.SetValue(obj, api);
         var inventory = new InventoryGeneric(2, "water-test", "1", null!) { Api = api };
         var pot = new QuietCookingSlot(inventory);
@@ -123,6 +133,38 @@ internal static class WaterInventoryTransferChecks
         source.Itemstack.Attributes.SetString(WaterMetadata.Key, "broken");
         water.TryMergeStacks(merge);
         Require(merge.MovedQuantity == 0 && source.StackSize == 30, "Malformed metadata allowed a real merge.");
+
+        // Exercise the real Harmony-patched held-container path for slurry, including
+        // two different pathogen concentrations and a partial final fill.
+        var cleanSlurry = new ItemStack(slurry, 40);
+        var dirtySlurry = new ItemStack(slurry, 200);
+        PathogenMetadata.Write(dirtySlurry, new Dictionary<string, double> { ["shigella"] = .5 });
+        var held = new ItemStack(bowl);
+        Require(bowl.TryPutLiquid(held, cleanSlurry, 1) == 40, "Empty slurry vessel overreported a short source stack.");
+        Require(bowl.TryPutLiquid(held, dirtySlurry, .25f) == 25, "Repeated slurry fill rejected pathogen metadata.");
+        Require(bowl.TryPutLiquid(held, dirtySlurry, 1) == 35 && bowl.GetContent(held)!.StackSize == 100,
+            "Slurry refill exceeded native vessel capacity.");
+        var slurryContent = bowl.GetContent(held)!;
+        Near(ManureMass.Total(slurryContent), 1000, "Slurry transfer changed mass.");
+        Near(PathogenMetadata.Read(slurryContent)["shigella"], .3, "Slurry transfer changed pathogen dose.");
+        Require(bowl.TryPutLiquid(held, dirtySlurry, 1) == 0, "Full slurry vessel accepted more liquid.");
+        var drawn = bowl.TryTakeLiquid(held, .25f);
+        Require(drawn.StackSize == 25 && bowl.GetContent(held)!.StackSize == 75, "Slurry draw failed.");
+        Require(bowl.TryPutLiquid(held, drawn, 1) == 25, "Slurry draw/pour-back failed.");
+        Near(ManureMass.Total(bowl.GetContent(held)!), 1000, "Slurry draw/pour-back lost mass.");
+        Require(barrelBlock.TryPutLiquid(barrel.Pos, cleanSlurry, 10) == 40,
+            "Empty barrel miscounted slurry transfer.");
+        Require(barrelBlock.TryPutLiquid(barrel.Pos, dirtySlurry, 1) == 100 && barrel.Inventory[1].StackSize == 140,
+            "Repeated slurry pour into the actual barrel liquid slot failed.");
+        var fromBarrel = barrelBlock.TryTakeContent(barrel.Pos, 25);
+        Require(fromBarrel.StackSize == 25 && barrel.Inventory[1].StackSize == 115,
+            "Native barrel slurry draw failed.");
+        Require(barrelBlock.TryPutLiquid(barrel.Pos, fromBarrel, .25f) == 25 && barrel.Inventory[0].Empty,
+            "Native barrel slurry pour-back failed or wrote into the solid slot.");
+        Near(ManureMass.Total(barrel.Inventory[1].Itemstack!), 1400, "Barrel slurry roundtrip lost mass.");
+        Near(PathogenMetadata.Read(barrel.Inventory[1].Itemstack!)["shigella"] * 1400, 500,
+            "Barrel slurry roundtrip lost pathogen dose.");
+        Console.WriteLine("PASS native slurry vessels and barrel: repeated filling, short source, capacity, draw/pour-back, mass and pathogens on " + side);
     }
     private static void Require(bool value, string why) { if (!value) throw new Exception(why); }
     private static void Near(double actual, double expected, string why) => Require(Math.Abs(actual - expected) < 1e-6, why);
@@ -131,6 +173,7 @@ internal static class WaterInventoryTransferChecks
         public override float CapacityLitres => 1;
         public override float TransferSizeLitres => .25f;
     }
+    private sealed class TestBarrel : BlockBarrel { public override float CapacityLitres => 50; }
     private sealed class QuietSlot(InventoryBase inventory) : ItemSlot(inventory) { public override void MarkDirty() { } }
     private sealed class QuietCookingSlot(InventoryBase inventory) : ItemSlotWatertight(inventory, 6)
     { public override void MarkDirty() { } }

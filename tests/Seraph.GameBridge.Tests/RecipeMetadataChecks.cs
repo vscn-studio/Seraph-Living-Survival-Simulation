@@ -46,6 +46,7 @@ internal static class RecipeMetadataChecks
         void Tag(ItemStack stack)
         {
             stack.Attributes.SetString("vsslssmod:pathogens-v1", "{\"shigella\":0.2}");
+            stack.Attributes.SetDouble("vsslssmod:manureMassG", 10);
             if (stack.Collectible.Code.Path == "waterportion")
             {
                 mod.GetType("Seraph.World.WaterMetadata")!.GetMethod("Write")!.Invoke(null,

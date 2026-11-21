@@ -97,6 +97,5 @@ internal sealed class ManureGroundStorage(Item manure, Block storage, MethodInfo
 
     internal static bool ContainsManure(BlockEntity? entity)
         => entity is BlockEntityContainer container && container.Inventory.Any(slot =>
-            slot.Itemstack is { StackSize: > 0 } stack && stack.Collectible.Code?.Domain is "naturalfertilizer" or "vsslssmod"
-            && stack.Collectible.Code.Path == "manure");
+            slot.Itemstack is { StackSize: > 0 } stack && LatrineWasteStorage.IsManure(stack));
 }

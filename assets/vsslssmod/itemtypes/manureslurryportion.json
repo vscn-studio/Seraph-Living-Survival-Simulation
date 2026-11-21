@@ -1,0 +1,17 @@
+{
+  "code": "manureslurryportion",
+  "class": "ItemLiquidPortion",
+  "matterState": "liquid",
+  "shape": { "base": "game:item/liquid" },
+  "texture": { "base": "game:block/soil/fertcompost" },
+  "maxstacksize": 5000,
+  "materialDensity": 1000,
+  "attributes": {
+    "waterTightContainerProps": {
+      "containable": true, "itemsPerLitre": 100,
+      "texture": { "base": "game:block/soil/fertcompost" }, "isopaque": true,
+      "allowSpill": true,
+      "whenSpilled": { "action": "DropContents", "stack": { "type": "item", "code": "vsslssmod:manureslurryportion" } }
+    }
+  }
+}

@@ -70,6 +70,7 @@ try
     }
     var nativeSmoke = Array.IndexOf(args, "--smoke-native");
     if (nativeSmoke >= 0) { SmokeNativeChecks.Run(mod, args[nativeSmoke + 1], args[nativeSmoke + 2]); return 0; }
+    if (args.Contains("--latrine")) { LatrineChecks.Run(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../../../")), gamePath); return 0; }
     if (args.Contains("--waste")) { WasteBridgeChecks.Run(mod); AshBridgeChecks.Run(mod); return 0; }
     if (args.Contains("--water")) { SurfaceWaterBridgeChecks.Run(); WaterCompatibilityBridgeChecks.Run(mod); WaterInventoryTransferChecks.Run(); WaterInfoChecks.Run(mod); WaterHeatingGameChecks.Run(); DistillationGameChecks.Run(); GroundDrinkChecks.Run(); return 0; }
     if (args.Contains("--symptoms")) { SymptomChecks.Run(mod); SleepEyeCombatChecks.Run(mod); ProgressRedesignChecks.Run(mod, null); return 0; }

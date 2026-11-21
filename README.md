@@ -1,6 +1,6 @@
 # Seraph A Living Survival Simulation
 
-炽天使：生存模拟 **1.0.1**，适用于 Vintage Story 1.22.x。客户端与服务端均需安装主包；可选客户端调试包需要 VSImGui 1.2.7。
+炽天使：生存模拟 **1.0.2**，适用于 Vintage Story 1.22.x。客户端与服务端均需安装主包；可选客户端调试包需要 VSImGui 1.2.7。
 
 ## 功能
 

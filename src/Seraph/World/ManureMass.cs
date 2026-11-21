@@ -9,8 +9,11 @@ internal static class ManureMass
     // Historical untagged items keep their original 100 g value.
     internal static double PerItem(ItemStack stack)
     {
-        var mass = stack.Attributes.GetDouble(Key, 100);
-        return double.IsFinite(mass) && mass > 0 && mass <= BowelSettlement.CapacityG ? mass : 100;
+        var fallback = LatrineWasteStorage.IsSlurry(stack)
+            && Vintagestory.GameContent.BlockLiquidContainerBase.GetContainableProps(stack) is { ItemsPerLitre: > 0 } props
+            ? 1000d / props.ItemsPerLitre : 100;
+        var mass = stack.Attributes.GetDouble(Key, fallback);
+        return double.IsFinite(mass) && mass > 0 && mass <= BowelSettlement.CapacityG ? mass : fallback;
     }
     internal static double Total(ItemStack stack) => PerItem(stack) * stack.StackSize;
     internal static void Mix(ItemStack stack, int oldCount, int addedCount, double massG,

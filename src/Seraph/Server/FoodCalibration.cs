@@ -61,10 +61,10 @@ internal static class FoodCalibration
         }
         var originalMass = meats.Sum(m => m.Mass * m.Mean);
         if (originalMass <= 0) return false;
-        // Conservative recoverable boneless muscle: 30% of the game's live body mass.
+        // Gameplay yield is 10% of the former 30%-of-body-mass budget (3% total).
         // Native body condition, field losses, skills and Butchering workstation efficiency
         // still apply downstream. Hide, bone, fat, blood and bonus prime cuts are separate.
-        var factor = entity.Weight * 1000 * .3 / originalMass;
+        var factor = entity.Weight * 1000 * .03 / originalMass;
         foreach (var (drop, _, mean) in meats)
         {
             drop["quantity"]!["avg"] = mean * factor;

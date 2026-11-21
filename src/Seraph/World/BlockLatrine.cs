@@ -86,12 +86,13 @@ public sealed partial class BlockEntityLatrine : BlockEntity
             serverPlayer.SendMessage(GlobalConstants.GeneralChatGroup, Lang.Get("vsslssmod:latrine-needs-barrel"), EnumChatType.Notification);
             return true;
         }
+        if (!Api.World.Claims.TryAccess(player, storage.Position, EnumBlockAccessFlags.Use)) return true;
         if (waste > 0)
         {
-            var move = Math.Min(waste, storage.Capacity - storage.Quantity);
+            var move = Math.Min(waste, storage.AvailablePortions);
             if (move > 0)
             {
-                storage.Add(Api.World, move);
+                storage.Add(Api.World, move, actualMassG: move * 100d);
                 waste -= move;
                 MarkDirty(true);
             }
@@ -114,7 +115,7 @@ public sealed partial class BlockEntityLatrine : BlockEntity
         && (latrine.waste > 0 || latrine.Api is not null
             && ManureGroundStorage.ContainsManure(latrine.Api.World.BlockAccessor.GetBlockEntity(latrine.Pos.AddCopy(0, -1, 0))));
     public string InfoText() => Api is not null && LatrineWasteStorage.Read(Api.World, Pos) is { } storage
-        ? Lang.Get("vsslssmod:latrine-level", storage.Quantity, storage.Capacity)
+        ? Lang.Get("vsslssmod:latrine-level", storage.Quantity.ToString("0.##"), storage.Capacity)
         : Lang.Get("vsslssmod:latrine-needs-barrel");
 
     public override void ToTreeAttributes(ITreeAttribute tree) { base.ToTreeAttributes(tree); tree.SetInt("waste", waste); tree.SetInt("direction", Direction); }

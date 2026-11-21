@@ -12,7 +12,7 @@ internal sealed class RecipeMetadataCompatibility : IDisposable
 {
     private const string PatchId = "vsslssmod.recipe-metadata";
     private static readonly string[] AnnotationKeys = [WaterMetadata.Key, WaterMetadata.TemperatureUpdatedAtKey,
-        PathogenMetadata.Key, CraftedFoodNutrition.Key, "vsslssmodSaltGrams"];
+        PathogenMetadata.Key, ManureMass.Key, CraftedFoodNutrition.Key, "vsslssmodSaltGrams"];
     private static readonly MethodInfo StackEquals = AccessTools.Method(typeof(ItemStack), nameof(ItemStack.Equals),
         [typeof(IWorldAccessor), typeof(ItemStack), typeof(string[])]);
     private static int owners;

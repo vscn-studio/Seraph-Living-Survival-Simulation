@@ -358,8 +358,8 @@ internal sealed partial class ServerCoordinator
         var storage = LatrineWasteStorage.Read(api.World, latrine.Pos);
         if (storage is null) { Notify(s, "latrine-needs-barrel"); return true; }
         if (!api.World.Claims.TryAccess(player, latrine.Pos, EnumBlockAccessFlags.Use)
-            || !api.World.Claims.TryAccess(player, latrine.Pos.AddCopy(0, -1, 0), EnumBlockAccessFlags.Use)) return true;
-        var (portions, amountG) = BowelSettlement.PlanDefecation(s.Interactions.BowelUnits, storage.Capacity - storage.Quantity);
+            || !api.World.Claims.TryAccess(player, storage.Position, EnumBlockAccessFlags.Use)) return true;
+        var (portions, amountG) = BowelSettlement.PlanDefecation(s.Interactions.BowelUnits, storage.AvailablePortions);
         if (amountG <= 0) { Notify(s, "latrine-full"); return true; }
         // Release the ground pose before the seat takes ownership of the same animation.
         if (!e.TryMount(latrine)) { Notify(s, "must-rest"); return true; }
@@ -377,7 +377,7 @@ internal sealed partial class ServerCoordinator
         var latrine = api.World.BlockAccessor.GetBlockEntity(pending.Target) as BlockEntityLatrine;
         if (!ReferenceEquals(latrine, pending.Latrine) || !pending.Storage.Matches(api.World)
             || !api.World.Claims.TryAccess(s.Player, pending.Target, EnumBlockAccessFlags.Use)
-            || !api.World.Claims.TryAccess(s.Player, pending.Target.AddCopy(0, -1, 0), EnumBlockAccessFlags.Use)
+            || !api.World.Claims.TryAccess(s.Player, pending.Storage.Position, EnumBlockAccessFlags.Use)
             || !advancing || !s.Player.Entity.Alive || !IsSurvivalTestPlayer(s.Player)
             || s.Player.Entity.MountedOn != latrine || pending.Generation != s.LifeGeneration
             || s.Player.Entity.WatchedAttributes.GetInt("onHurtCounter") != pending.HurtCounter)
@@ -393,7 +393,7 @@ internal sealed partial class ServerCoordinator
         { s.LatrineDefecation = null; Notify(s, "world-bowel-empty"); SendSnapshot(s); return; }
         var old = s.Interactions;
         var oldFrame = s.Framework;
-        var plan = BowelSettlement.PlanDefecation(old.BowelUnits, pending.Storage.Capacity - pending.Storage.Quantity);
+        var plan = BowelSettlement.PlanDefecation(old.BowelUnits, pending.Storage.AvailablePortions);
         if (plan.MassG <= 0) { s.LatrineDefecation = null; Notify(s, "world-bowel-empty"); SendSnapshot(s); return; }
         var massG = plan.MassG;
         s.Framework = HandContamination.AfterDefecation(oldFrame with {

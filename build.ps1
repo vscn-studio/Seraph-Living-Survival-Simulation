@@ -87,7 +87,7 @@ if ($RunTests) {
         '--configuration', $Configuration, '--no-build', '--no-restore', '--', $VsGamePath, '--well-structure')
     Invoke-Dotnet @('run', '--project', (Join-Path $root 'tests\Seraph.GameBridge.Tests\Seraph.GameBridge.Tests.csproj'),
         '--configuration', $Configuration, '--no-build', '--no-restore', '--', $VsGamePath, '--hot-water')
-    foreach ($feature in @('--food', '--world-interactions', '--metrics', '--water', '--recipes', '--pollution', '--water-immersion')) {
+    foreach ($feature in @('--food', '--world-interactions', '--metrics', '--water', '--recipes', '--pollution', '--water-immersion', '--latrine')) {
         Invoke-Dotnet @('run', '--project', (Join-Path $root 'tests\Seraph.GameBridge.Tests\Seraph.GameBridge.Tests.csproj'),
             '--configuration', $Configuration, '--no-build', '--no-restore', '--', $VsGamePath, $feature)
     }
@@ -283,6 +283,7 @@ try {
         'assets/vsslssmod/textures/gui/status/hansjack/attribution.json',
 
         'assets/vsslssmod/itemtypes/manure.json',
+        'assets/vsslssmod/itemtypes/manureslurryportion.json',
         'assets/vsslssmod/itemtypes/ash.json',
         'assets/vsslssmod/itemtypes/lye.json',
         'assets/vsslssmod/itemtypes/soap.json',
