@@ -1,6 +1,6 @@
 # Asset Credits and Licensing
 
-Project code and project-created assets are copyright HansJack under the MIT License in LICENSE, except where stated below. Project MIT does not relicense third-party assets. Mod authors: HansJack, ch4Ver, buzidao9 and Zhiketangjiang2.
+Project code and project-created assets are copyright HansJack under the MIT License in LICENSE, except where stated below. Project MIT does not relicense third-party assets. Mod authors: HansJack, ch4Ver, buzidao9, Zhiketangjiang2 and KitamuraEri.
 
 ## Status icons
 
@@ -14,7 +14,7 @@ Project code and project-created assets are copyright HansJack under the MIT Lic
 - Sediment diversion pot (drainpot and pipe/inventory variants) and water purification filter pot (filterpot and inventory variant, also used by watertreatment): copyright buzidao9.
 - These creators authorized use in this project; all other rights remain with them. Permissions were confirmed by the project maintainer on 2026-11-08. This is project-specific permission, not MIT relicensing. See THIRD-PARTY-NOTICES/Authorized-Models.txt; contact the creators for other uses.
 - Rainwater reservoir cover, well head, well wall, chimney exhaust and copper bathtub: created by HansJack, MIT. Referenced native game models and textures, including copper and water, remain the property of their owners.
-- Stone-ring firepit: supplied by the project maintainer as `围石篝火_2_blockbench.json` for integration into this mod. Runtime shapes: `stonefirepit.json` and `stonefirepit-ring.json`. Copyright KitamuraEri (喜多村樱璃Eri). The author authorized use in this mod, confirmed by the project maintainer on 2026-11-21. This is project-specific permission; the model is not relicensed under MIT. See THIRD-PARTY-NOTICES/Authorized-Models.txt.
+- Stone-ring firepit: runtime shapes in `assets/vsslssmod/shapes/block/stonefirepit.json` and `assets/vsslssmod/shapes/block/stonefirepit-ring.json`. Copyright KitamuraEri (喜多村樱璃Eri). The author authorized use in this mod, confirmed by the project maintainer on 2026-11-21. This is project-specific permission; the model is not relicensed under MIT. See THIRD-PARTY-NOTICES/Authorized-Models.txt.
 - The stone firepit block definition adapts native Vintage Story firepit settings; native log/ash geometry and textures remain Anego Studios material. World rendering references native firepit shapes and textures from the installed game.
 
 ## Player inspection images

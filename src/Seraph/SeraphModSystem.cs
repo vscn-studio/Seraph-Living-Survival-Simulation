@@ -13,6 +13,7 @@ public sealed partial class SeraphModSystem : ModSystem
     private ServerCoordinator? server;
     private ICoreAPI? coreApi;
     private World.NativeWaterTransfer? waterTransfer;
+    private World.CottageWaterCompatibility? cottageWater;
     private World.RecipeMetadataCompatibility? recipeMetadata;
     private World.NativeWaterHeating? waterHeating;
     private World.NativeWaterDistillation? waterDistillation;
@@ -82,6 +83,7 @@ public sealed partial class SeraphModSystem : ModSystem
         server?.ReportRuntimeCompatibility();
         BleedingVisualBridge.AttachParticles(api);
         waterTransfer?.RegisterBlocks();
+        cottageWater ??= new World.CottageWaterCompatibility(api);
         if (api.Side == EnumAppSide.Client)
             foreach (var collectible in api.World.Items.Cast<CollectibleObject>().Concat(api.World.Blocks))
             {
@@ -148,6 +150,7 @@ public sealed partial class SeraphModSystem : ModSystem
         vehicleBridge?.Dispose();
         server?.Dispose();
         waterTransfer?.Dispose();
+        cottageWater?.Dispose();
         recipeMetadata?.Dispose();
         waterHeating?.Dispose();
         waterDistillation?.Dispose();

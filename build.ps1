@@ -97,6 +97,12 @@ if ($RunTests) {
         Invoke-Dotnet @('run', '--project', (Join-Path $root 'tests/Seraph.GameBridge.Tests/Seraph.GameBridge.Tests.csproj'),
             '--configuration', $Configuration, '--no-build', '--no-restore', '--', $VsGamePath, '--butchering-food', $butchering[0].FullName)
     }
+    $cottage = @(Get-ChildItem -Path (Join-Path $env:APPDATA 'MVL/Modpack/测试服务器/Cache/unpack/Cottage Industry-1.2.3.zip_*/cottageindustry.dll') -File -ErrorAction SilentlyContinue |
+        Sort-Object LastWriteTimeUtc -Descending | Select-Object -First 1)
+    if ($cottage.Count) {
+        Invoke-Dotnet @('run', '--project', (Join-Path $root 'tests/Seraph.GameBridge.Tests/Seraph.GameBridge.Tests.csproj'),
+            '--configuration', $Configuration, '--no-build', '--no-restore', '--', $VsGamePath, '--cottage-water', $cottage[0].FullName)
+    }
     if ($RealSmokePath) {
         $scent = @(Get-ChildItem -Path (Join-Path $env:APPDATA 'MVL/Modpack/测试服务器/Cache/unpack/Smoke*/SmokeScent.dll') -File -ErrorAction SilentlyContinue |
             Sort-Object LastWriteTimeUtc -Descending | Select-Object -First 1)

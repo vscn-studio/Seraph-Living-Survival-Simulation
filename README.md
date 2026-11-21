@@ -59,8 +59,6 @@
 
 ## 作者与授权
 
-作者：HansJack、ch4Ver、buzidao9、Zhiketangjiang2。
-
-围石篝火模型：KitamuraEri（喜多村樱璃Eri），已授权本模组使用。
+作者：HansJack、ch4Ver、buzidao9、Zhiketangjiang2、KitamuraEri。
 
 项目代码采用 [MIT](LICENSE)。模型、图标、音效、游戏衍生素材和数据来源见 [素材声明](ASSET-CREDITS.md) 与 [第三方许可](THIRD-PARTY-NOTICES)。第三方素材遵循各自授权；发行包保留版权声明，不包含此 README。

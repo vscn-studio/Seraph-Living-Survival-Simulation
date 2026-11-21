@@ -310,7 +310,7 @@ internal sealed partial class NativeWaterTransfer : IDisposable
         return result;
     }
 
-    private static bool WaterIdentityMatches(IWorldAccessor world, ItemStack current, ItemStack incoming)
+    internal static bool WaterIdentityMatches(IWorldAccessor world, ItemStack current, ItemStack incoming)
     {
         // Water quality and its temperature-update clock describe stored water;
         // neither makes otherwise identical water a different liquid for pouring.

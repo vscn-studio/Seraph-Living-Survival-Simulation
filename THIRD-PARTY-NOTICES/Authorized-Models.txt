@@ -21,8 +21,6 @@ remain the property of their respective rights holders.
 不授予其他项目使用权。此说明记录维护者确认的授权，不替代作者原始授权凭证。
 
 Stone-ring firepit / 围石篝火
-Source: 围石篝火_2_blockbench.json, supplied by the project maintainer
-for integration on 2026-11-21.
 Copyright KitamuraEri (喜多村樱璃Eri). All rights reserved.
 The author authorized use of this model in Seraph A Living Survival
 Simulation, as confirmed by the project maintainer on 2026-11-21.
